@@ -153,6 +153,78 @@ src/3d_model/PointCloud.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.s
 .PHONY : src/3d_model/PointCloud.cpp.s
 
+src/enviroment/enviroment.o: src/enviroment/enviroment.cpp.o
+.PHONY : src/enviroment/enviroment.o
+
+# target to build an object file
+src/enviroment/enviroment.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o
+.PHONY : src/enviroment/enviroment.cpp.o
+
+src/enviroment/enviroment.i: src/enviroment/enviroment.cpp.i
+.PHONY : src/enviroment/enviroment.i
+
+# target to preprocess a source file
+src/enviroment/enviroment.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.i
+.PHONY : src/enviroment/enviroment.cpp.i
+
+src/enviroment/enviroment.s: src/enviroment/enviroment.cpp.s
+.PHONY : src/enviroment/enviroment.s
+
+# target to generate assembly for a file
+src/enviroment/enviroment.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.s
+.PHONY : src/enviroment/enviroment.cpp.s
+
+src/enviroment/octree/Octree.o: src/enviroment/octree/Octree.cpp.o
+.PHONY : src/enviroment/octree/Octree.o
+
+# target to build an object file
+src/enviroment/octree/Octree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.o
+.PHONY : src/enviroment/octree/Octree.cpp.o
+
+src/enviroment/octree/Octree.i: src/enviroment/octree/Octree.cpp.i
+.PHONY : src/enviroment/octree/Octree.i
+
+# target to preprocess a source file
+src/enviroment/octree/Octree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.i
+.PHONY : src/enviroment/octree/Octree.cpp.i
+
+src/enviroment/octree/Octree.s: src/enviroment/octree/Octree.cpp.s
+.PHONY : src/enviroment/octree/Octree.s
+
+# target to generate assembly for a file
+src/enviroment/octree/Octree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.s
+.PHONY : src/enviroment/octree/Octree.cpp.s
+
+src/enviroment/point/point.o: src/enviroment/point/point.cpp.o
+.PHONY : src/enviroment/point/point.o
+
+# target to build an object file
+src/enviroment/point/point.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o
+.PHONY : src/enviroment/point/point.cpp.o
+
+src/enviroment/point/point.i: src/enviroment/point/point.cpp.i
+.PHONY : src/enviroment/point/point.i
+
+# target to preprocess a source file
+src/enviroment/point/point.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.i
+.PHONY : src/enviroment/point/point.cpp.i
+
+src/enviroment/point/point.s: src/enviroment/point/point.cpp.s
+.PHONY : src/enviroment/point/point.s
+
+# target to generate assembly for a file
+src/enviroment/point/point.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.s
+.PHONY : src/enviroment/point/point.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -177,30 +249,6 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
-src/octree/Octree.o: src/octree/Octree.cpp.o
-.PHONY : src/octree/Octree.o
-
-# target to build an object file
-src/octree/Octree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.o
-.PHONY : src/octree/Octree.cpp.o
-
-src/octree/Octree.i: src/octree/Octree.cpp.i
-.PHONY : src/octree/Octree.i
-
-# target to preprocess a source file
-src/octree/Octree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.i
-.PHONY : src/octree/Octree.cpp.i
-
-src/octree/Octree.s: src/octree/Octree.cpp.s
-.PHONY : src/octree/Octree.s
-
-# target to generate assembly for a file
-src/octree/Octree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.s
-.PHONY : src/octree/Octree.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,12 +261,18 @@ help:
 	@echo "... src/3d_model/PointCloud.o"
 	@echo "... src/3d_model/PointCloud.i"
 	@echo "... src/3d_model/PointCloud.s"
+	@echo "... src/enviroment/enviroment.o"
+	@echo "... src/enviroment/enviroment.i"
+	@echo "... src/enviroment/enviroment.s"
+	@echo "... src/enviroment/octree/Octree.o"
+	@echo "... src/enviroment/octree/Octree.i"
+	@echo "... src/enviroment/octree/Octree.s"
+	@echo "... src/enviroment/point/point.o"
+	@echo "... src/enviroment/point/point.i"
+	@echo "... src/enviroment/point/point.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/octree/Octree.o"
-	@echo "... src/octree/Octree.i"
-	@echo "... src/octree/Octree.s"
 .PHONY : help
 
 

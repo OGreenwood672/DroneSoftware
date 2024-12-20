@@ -7,7 +7,9 @@ set(CMAKE_CXX_STANDARD 17)
 # Add source files
 add_executable(OctreeProject
     src/main.cpp
-    src/octree/Octree.cpp
+    src/enviroment/enviroment.cpp
+    src/enviroment/point/point.cpp
+    src/enviroment/octree/Octree.cpp
     src/3d_model/PointCloud.cpp
 )
 

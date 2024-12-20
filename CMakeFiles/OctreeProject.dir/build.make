@@ -83,24 +83,52 @@ CMakeFiles/OctreeProject.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OctreeProject.dir/src/main.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/main.cpp" -o CMakeFiles/OctreeProject.dir/src/main.cpp.s
 
-CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.o: CMakeFiles/OctreeProject.dir/flags.make
-CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.o: src/octree/Octree.cpp
-CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.o: CMakeFiles/OctreeProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.o -MF CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.o.d -o CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/octree/Octree.cpp"
+CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o: CMakeFiles/OctreeProject.dir/flags.make
+CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o: src/enviroment/enviroment.cpp
+CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o: CMakeFiles/OctreeProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o -MF CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o.d -o CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/enviroment/enviroment.cpp"
 
-CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/octree/Octree.cpp" > CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.i
+CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/enviroment/enviroment.cpp" > CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.i
 
-CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/octree/Octree.cpp" -o CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.s
+CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/enviroment/enviroment.cpp" -o CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.s
+
+CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o: CMakeFiles/OctreeProject.dir/flags.make
+CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o: src/enviroment/point/point.cpp
+CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o: CMakeFiles/OctreeProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o -MF CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o.d -o CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/enviroment/point/point.cpp"
+
+CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/enviroment/point/point.cpp" > CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.i
+
+CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/enviroment/point/point.cpp" -o CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.s
+
+CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.o: CMakeFiles/OctreeProject.dir/flags.make
+CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.o: src/enviroment/octree/Octree.cpp
+CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.o: CMakeFiles/OctreeProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.o -MF CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.o.d -o CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/enviroment/octree/Octree.cpp"
+
+CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/enviroment/octree/Octree.cpp" > CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.i
+
+CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/enviroment/octree/Octree.cpp" -o CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.s
 
 CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.o: CMakeFiles/OctreeProject.dir/flags.make
 CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.o: src/3d_model/PointCloud.cpp
 CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.o: CMakeFiles/OctreeProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.o -MF CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.o.d -o CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/3d_model/PointCloud.cpp"
 
 CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.i: cmake_force
@@ -114,18 +142,22 @@ CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.s: cmake_force
 # Object files for target OctreeProject
 OctreeProject_OBJECTS = \
 "CMakeFiles/OctreeProject.dir/src/main.cpp.o" \
-"CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.o" \
+"CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o" \
+"CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o" \
+"CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.o" \
 "CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.o"
 
 # External object files for target OctreeProject
 OctreeProject_EXTERNAL_OBJECTS =
 
 OctreeProject: CMakeFiles/OctreeProject.dir/src/main.cpp.o
-OctreeProject: CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.o
+OctreeProject: CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o
+OctreeProject: CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o
+OctreeProject: CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.o
 OctreeProject: CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.o
 OctreeProject: CMakeFiles/OctreeProject.dir/build.make
 OctreeProject: CMakeFiles/OctreeProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable OctreeProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable OctreeProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OctreeProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

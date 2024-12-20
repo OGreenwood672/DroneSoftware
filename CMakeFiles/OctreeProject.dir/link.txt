@@ -1,1 +1,1 @@
-/usr/bin/g++ CMakeFiles/OctreeProject.dir/src/main.cpp.o CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.o CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.o -o OctreeProject 
+/usr/bin/g++ CMakeFiles/OctreeProject.dir/src/main.cpp.o CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.o CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.o -o OctreeProject 

@@ -1,10 +1,14 @@
 file(REMOVE_RECURSE
   "CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.o"
   "CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.o.d"
+  "CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o"
+  "CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o.d"
+  "CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.o"
+  "CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.o.d"
+  "CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o"
+  "CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o.d"
   "CMakeFiles/OctreeProject.dir/src/main.cpp.o"
   "CMakeFiles/OctreeProject.dir/src/main.cpp.o.d"
-  "CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.o"
-  "CMakeFiles/OctreeProject.dir/src/octree/Octree.cpp.o.d"
   "OctreeProject"
   "OctreeProject.pdb"
 )
