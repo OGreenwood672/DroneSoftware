@@ -1,6 +1,8 @@
 #ifndef POINT_H
 #define POINT_H
 
+#include <iostream>
+
 // Struct to represent a 3D point
 struct Point {
     int x, y, z;

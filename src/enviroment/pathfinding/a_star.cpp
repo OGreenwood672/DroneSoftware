@@ -85,7 +85,7 @@ std::vector<Point> a_star(Point start, Point end, Enviroment world) {
         for (Point child : children) {
 
             // If the child is in the closed list, skip it
-            // TODO: Could convert closed list to an octree for faster lookups
+            // TODO: Could convert closed list to an unordered_set for O(1) lookup
             bool skip = false;
             for (Point closed_child : closed) {
                 if (child == closed_child) {

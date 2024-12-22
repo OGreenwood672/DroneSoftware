@@ -110,3 +110,19 @@ bool Octree::find(int x, int y, int z) const {
         return (x == children[pos]->point->x && y == children[pos]->point->y && z == children[pos]->point->z);
     }
 }
+
+
+std::unordered_set<Point> Octree::get_points() const {
+    std::unordered_set<Point> points;
+    if (point != nullptr) {
+        points.insert(*point);
+    } else {
+        for (auto child : children) {
+            if (child != nullptr) {
+                std::unordered_set<Point> child_points = child->get_points();
+                points.insert(child_points.begin(), child_points.end());
+            }
+        }
+    }
+    return points;
+}

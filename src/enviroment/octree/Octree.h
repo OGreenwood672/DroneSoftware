@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <vector>
+#include <unordered_set>
 
 #include "../point/point.h"
 
@@ -45,6 +46,8 @@ public:
 
     // Find if a point exists in the Octree
     bool find(int x, int y, int z) const;
+
+    std::unordered_set<Point> get_points() const;
 };
 
 #endif // OCTREE_H
