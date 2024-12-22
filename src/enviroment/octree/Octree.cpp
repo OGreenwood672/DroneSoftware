@@ -1,4 +1,5 @@
 #include "Octree.h"
+#include <algorithm>
 
 // Octree constructors
 Octree::Octree() : point(new Point()) {}
@@ -125,4 +126,10 @@ std::unordered_set<Point> Octree::get_points() const {
         }
     }
     return points;
+}
+
+bool Octree::is_empty() const {
+    return std::all_of(children.begin(), children.end(), [](Octree* child) {
+        return child == nullptr;
+    });
 }

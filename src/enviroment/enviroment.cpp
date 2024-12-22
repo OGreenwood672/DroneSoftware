@@ -13,6 +13,10 @@ Enviroment::Enviroment() {
         return;
     }
 
+    // Voxel is unscanned -> octree = nullptr
+    // Voxel is air -> octree = empty
+    // Voxel is occupied -> octree = points
+
     width = WORLD_WIDTH / DRONE_WIDTH;
     depth = WORLD_DEPTH / DRONE_DEPTH;
     height = WORLD_HEIGHT / DRONE_HEIGHT;
@@ -27,16 +31,28 @@ Enviroment::Enviroment() {
     }
 };
 
-Point Enviroment::update_enviroment(Point points[]) {
+Point Enviroment::update_enviroment(Point origin, Point points[]) {
+
+    int origin_x = origin.x / DRONE_WIDTH;
+    int origin_y = origin.y / DRONE_HEIGHT;
+    int origin_z = origin.z / DRONE_DEPTH;
 
     for (int i = 0; i < BATCH_SIZE; ++i) {
         int x = points[i].x / DRONE_WIDTH;
         int y = points[i].y / DRONE_HEIGHT;
         int z = points[i].z / DRONE_DEPTH;
 
-        if (world[x][y][z] == nullptr) {
-            world[x][y][z] = std::make_unique<Octree>(x * DRONE_WIDTH, y * DRONE_HEIGHT, z * DRONE_DEPTH,
-                                                      (x + 1) * DRONE_WIDTH, (y + 1) * DRONE_HEIGHT, (z + 1) * DRONE_DEPTH);
+        std::vector<std::array<int, 3>> path = bresenham_3d({origin_x, origin_y, origin_z}, {points[i].x, points[i].y, points[i].z});
+
+        for (std::array<int, 3> p : path) {
+            int x_ = p[0];
+            int y_ = p[1];
+            int z_ = p[2];
+
+            if (world[x_][y_][z_] == nullptr) {
+                world[x_][y_][z_] = std::make_unique<Octree>(x_ * DRONE_WIDTH, y_ * DRONE_HEIGHT, z_ * DRONE_DEPTH,
+                                                            (x_ + 1) * DRONE_WIDTH, (y_ + 1) * DRONE_HEIGHT, (z_ + 1) * DRONE_DEPTH);
+            }
         }
 
         world[x][y][z]->insert(points[i].x, points[i].y, points[i].z);
@@ -45,7 +61,13 @@ Point Enviroment::update_enviroment(Point points[]) {
 };
 
 bool Enviroment::is_air(int x, int y, int z) {
-    return world[x][y][z] == nullptr;
+    Octree* octree = world[x][y][z];
+    if (octree == nullptr) {
+        return false;
+    }
+    
+    return octree->is_empty();
+
 };
 
 std::vector<int[3]> Enviroment::get_air_neighbours(int x, int y, int z) {

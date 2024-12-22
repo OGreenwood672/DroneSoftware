@@ -32,6 +32,8 @@ private:
     // Children nodes (8 subdivisions)
     std::vector<Octree*> children;
 
+    bool is_empty() const;
+
     // Helper to determine child position for a given point
     int determineChildPosition(int x, int y, int z, int midx, int midy, int midz) const;
 
