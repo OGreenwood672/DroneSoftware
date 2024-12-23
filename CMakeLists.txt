@@ -22,6 +22,8 @@ add_executable(OctreeProject
 
     src/FlightController/FlightController.cpp
 
+    src/drone_communication/Communicator.cpp
+
 )
 
 # Include directories

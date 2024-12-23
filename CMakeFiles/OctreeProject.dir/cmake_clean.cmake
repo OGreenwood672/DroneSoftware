@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o.d"
   "CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.o"
   "CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.o.d"
+  "CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.o"
+  "CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.o.d"
   "CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o"
   "CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o.d"
   "CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.o"

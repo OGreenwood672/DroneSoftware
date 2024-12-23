@@ -81,12 +81,12 @@ clean: CMakeFiles/OctreeProject.dir/clean
 CMakeFiles/OctreeProject.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target OctreeProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target OctreeProject"
 .PHONY : CMakeFiles/OctreeProject.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/OctreeProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" 11
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" 12
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/OctreeProject.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" 0
 .PHONY : CMakeFiles/OctreeProject.dir/rule

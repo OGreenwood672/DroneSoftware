@@ -201,6 +201,30 @@ src/FlightController/FlightController.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.s
 .PHONY : src/FlightController/FlightController.cpp.s
 
+src/drone_communication/Communicator.o: src/drone_communication/Communicator.cpp.o
+.PHONY : src/drone_communication/Communicator.o
+
+# target to build an object file
+src/drone_communication/Communicator.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.o
+.PHONY : src/drone_communication/Communicator.cpp.o
+
+src/drone_communication/Communicator.i: src/drone_communication/Communicator.cpp.i
+.PHONY : src/drone_communication/Communicator.i
+
+# target to preprocess a source file
+src/drone_communication/Communicator.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.i
+.PHONY : src/drone_communication/Communicator.cpp.i
+
+src/drone_communication/Communicator.s: src/drone_communication/Communicator.cpp.s
+.PHONY : src/drone_communication/Communicator.s
+
+# target to generate assembly for a file
+src/drone_communication/Communicator.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.s
+.PHONY : src/drone_communication/Communicator.cpp.s
+
 src/enviroment/enviroment.o: src/enviroment/enviroment.cpp.o
 .PHONY : src/enviroment/enviroment.o
 
@@ -387,6 +411,9 @@ help:
 	@echo "... src/FlightController/FlightController.o"
 	@echo "... src/FlightController/FlightController.i"
 	@echo "... src/FlightController/FlightController.s"
+	@echo "... src/drone_communication/Communicator.o"
+	@echo "... src/drone_communication/Communicator.i"
+	@echo "... src/drone_communication/Communicator.s"
 	@echo "... src/enviroment/enviroment.o"
 	@echo "... src/enviroment/enviroment.i"
 	@echo "... src/enviroment/enviroment.s"
