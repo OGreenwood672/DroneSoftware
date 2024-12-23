@@ -3,15 +3,7 @@
 #include <algorithm>
 #include <cmath>
 
-AlphaShapes::AlphaShapes(Enviroment* world, double alpha) : world(world), alpha(alpha) {
-    voxelTetrahedra.resize(world->get_width());
-    for (int i = 0; i < world->get_width(); ++i) {
-        voxelTetrahedra[i].resize(world->get_depth());
-        for (int j = 0; j < world->get_depth(); ++j) {
-            voxelTetrahedra[i][j].resize(world->get_height());
-        }
-    }
-}
+AlphaShapes::AlphaShapes(Enviroment* world, double alpha) : world(world), alpha(alpha) {}
 
 AlphaShapes::~AlphaShapes() {}
 
@@ -53,7 +45,7 @@ void AlphaShapes::computeVoxelAlphaShape(int x, int y, int z, std::unique_ptr<Oc
 }
 
 double Tetrahedron::getCircumsphereRadius() const {
-    // Compute the radius of the circumsphere of a tetrahedron
+    // Lambda function for determinant calculation of a 4x4 matrix
     auto det = [](double a, double b, double c, double d,
                   double e, double f, double g, double h,
                   double i, double j, double k, double l,
@@ -64,34 +56,49 @@ double Tetrahedron::getCircumsphereRadius() const {
                d * (e * (j * o - k * n) - f * (i * o - k * m) + g * (i * n - j * m));
     };
 
+    // Lambda for squaring a value
     auto sq = [](double val) { return val * val; };
 
-    // Tetrahedron matrix
+    // Tetrahedron vertex coordinates relative to D
     double a11 = A.x - D.x, a12 = A.y - D.y, a13 = A.z - D.z;
     double a21 = B.x - D.x, a22 = B.y - D.y, a23 = B.z - D.z;
     double a31 = C.x - D.x, a32 = C.y - D.y, a33 = C.z - D.z;
 
-    double D1 = det(a11, a12, a13, 1, a21, a22, a23, 1, a31, a32, a33, 1, 0, 0, 0, 1);
-    double Dx = det(sq(A.x) - sq(D.x) + sq(A.y) - sq(D.y) + sq(A.z) - sq(D.z), a12, a13, 1,
-                    sq(B.x) - sq(D.x) + sq(B.y) - sq(D.y) + sq(B.z) - sq(D.z), a22, a23, 1,
-                    sq(C.x) - sq(D.x) + sq(C.y) - sq(D.y) + sq(C.z) - sq(D.z), a32, a33, 1, 0);
-    double Dy = det(a11, sq(A.x) - sq(D.x) + sq(A.y) - sq(D.y) + sq(A.z) - sq(D.z), a13, 1,
-                    a21, sq(B.x) - sq(D.x) + sq(B.y) - sq(D.y) + sq(B.z) - sq(D.z), a23, 1,
-                    a31, sq(C.x) - sq(D.x) + sq(C.y) - sq(D.y) + sq(C.z) - sq(D.z), a33, 1, 0);
-    double Dz = det(a11, a12, sq(A.x) - sq(D.x) + sq(A.y) - sq(D.y) + sq(A.z) - sq(D.z), 1,
-                    a21, a22, sq(B.x) - sq(D.x) + sq(B.y) - sq(D.y) + sq(B.z) - sq(D.z), 1,
-                    a31, a32, sq(C.x) - sq(D.x) + sq(C.y) - sq(D.y) + sq(C.z) - sq(D.z), 1, 0);
-    double c = det(a11, a12, a13, sq(A.x) - sq(D.x) + sq(A.y) - sq(D.y) + sq(A.z) - sq(D.z),
-                   a21, a22, a23, sq(B.x) - sq(D.x) + sq(B.y) - sq(D.y) + sq(B.z) - sq(D.z),
-                   a31, a32, a33, sq(C.x) - sq(D.x) + sq(C.y) - sq(D.y) + sq(C.z) - sq(D.z),
+    // Determinants for circumsphere calculations
+    double D1 = det(a11, a12, a13, 1,
+                    a21, a22, a23, 1,
+                    a31, a32, a33, 1,
+                    0,    0,    0, 1);
+
+    double Dx = det(sq(A.x) + sq(A.y) + sq(A.z) - sq(D.x) - sq(D.y) - sq(D.z), a12, a13, 1,
+                    sq(B.x) + sq(B.y) + sq(B.z) - sq(D.x) - sq(D.y) - sq(D.z), a22, a23, 1,
+                    sq(C.x) + sq(C.y) + sq(C.z) - sq(D.x) - sq(D.y) - sq(D.z), a32, a33, 1,
+                    0, 0, 0, 1);
+
+    double Dy = det(a11, sq(A.x) + sq(A.y) + sq(A.z) - sq(D.x) - sq(D.y) - sq(D.z), a13, 1,
+                    a21, sq(B.x) + sq(B.y) + sq(B.z) - sq(D.x) - sq(D.y) - sq(D.z), a23, 1,
+                    a31, sq(C.x) + sq(C.y) + sq(C.z) - sq(D.x) - sq(D.y) - sq(D.z), a33, 1,
+                    0, 0, 0, 1);
+
+    double Dz = det(a11, a12, sq(A.x) + sq(A.y) + sq(A.z) - sq(D.x) - sq(D.y) - sq(D.z), 1,
+                    a21, a22, sq(B.x) + sq(B.y) + sq(B.z) - sq(D.x) - sq(D.y) - sq(D.z), 1,
+                    a31, a32, sq(C.x) + sq(C.y) + sq(C.z) - sq(D.x) - sq(D.y) - sq(D.z), 1,
+                    0, 0, 0, 1);
+
+    double c = det(a11, a12, a13, sq(A.x) + sq(A.y) + sq(A.z) - sq(D.x) - sq(D.y) - sq(D.z),
+                   a21, a22, a23, sq(B.x) + sq(B.y) + sq(B.z) - sq(D.x) - sq(D.y) - sq(D.z),
+                   a31, a32, a33, sq(C.x) + sq(C.y) + sq(C.z) - sq(D.x) - sq(D.y) - sq(D.z),
                    0, 0, 0, 1);
 
+    // Circumsphere center coordinates relative to D
     double x = Dx / (2 * D1);
     double y = Dy / (2 * D1);
     double z = Dz / (2 * D1);
 
+    // Circumsphere radius
     return std::sqrt(sq(x) + sq(y) + sq(z) - c / D1);
 }
+
 
 // Helper: Merge boundary tetrahedra between two voxels
 void AlphaShapes::mergeBoundaryTetrahedra(
@@ -125,9 +132,9 @@ void AlphaShapes::computeAlphaShapes() {
     for (int i = 0; i < world->get_width(); ++i) {
         for (int j = 0; j < world->get_depth(); ++j) {
             for (int k = 0; k < world->get_height(); ++k) {
-                std::vector<int[3]> neighbours = world->get_neighbours(i, j, k);
+                std::vector<std::array<int, 3>> neighbours = world->get_neighbours(i, j, k);
 
-                for (int[3] n : neighbours) {
+                for (std::array<int, 3> n : neighbours) {
                     if (n[0] < i || n[1] < j || n[2] < k) {
                         continue;
                     }

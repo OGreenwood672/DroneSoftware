@@ -17,20 +17,15 @@ Enviroment::Enviroment() {
     // Voxel is air -> octree = empty
     // Voxel is occupied -> octree = points
 
+    // Also defined on world declaration
     width = WORLD_WIDTH / DRONE_WIDTH;
     depth = WORLD_DEPTH / DRONE_DEPTH;
     height = WORLD_HEIGHT / DRONE_HEIGHT;
 
-    // Resize the 3D grid and initialize with nullptr (air)
-    world.resize(width);
-    for (int i = 0; i < width; ++i) {
-        world[i].resize(depth);
-        for (int j = 0; j < depth; ++j) {
-            world[i][j].resize(height, nullptr);
-        }
-    }
 };
 
+
+//TODO: Add point to multiple voxels if it is on the boundary
 Point Enviroment::update_enviroment(Point origin, Point points[]) {
 
     int origin_x = origin.x / DRONE_WIDTH;
@@ -61,17 +56,17 @@ Point Enviroment::update_enviroment(Point origin, Point points[]) {
 };
 
 bool Enviroment::is_air(int x, int y, int z) {
-    Octree* octree = world[x][y][z];
-    if (octree == nullptr) {
+
+    if (world[x][y][z] == nullptr) {
         return false;
     }
     
-    return octree->is_empty();
+    return world[x][y][z]->is_empty();
 
 };
 
-std::vector<int[3]> Enviroment::get_air_neighbours(int x, int y, int z) {
-    std::vector<int[3]> neighbours;
+std::vector<std::array<int, 3>> Enviroment::get_air_neighbours(int x, int y, int z) {
+    std::vector<std::array<int, 3>> neighbours;
 
     for (int i = -1; i <= 1; ++i) {
         for (int j = -1; j <= 1; ++j) {
@@ -98,8 +93,8 @@ std::vector<int[3]> Enviroment::get_air_neighbours(int x, int y, int z) {
     return neighbours;
 };
 
-std::vector<int[3]> Enviroment::get_neighbours(int x, int y, int z) {
-    std::vector<int[3]> neighbours;
+std::vector<std::array<int, 3>> Enviroment::get_neighbours(int x, int y, int z) {
+    std::vector<std::array<int, 3>> neighbours;
 
     for (int i = -1; i <= 1; ++i) {
         for (int j = -1; j <= 1; ++j) {

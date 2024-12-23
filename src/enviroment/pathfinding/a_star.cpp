@@ -3,7 +3,7 @@
 
 #include <vector>
 #include <unordered_map>
-
+#include <limits>
 
 float heuristic(Point a, Point b) {
     return abs(a.x - b.x) + abs(a.y - b.y) + abs(a.z - b.z);
@@ -79,10 +79,12 @@ std::vector<Point> a_star(Point start, Point end, Enviroment world) {
         }
 
         // Generate the children of the current node
-        std::vector<Point> children = world.get_air_neighbours(current);
+        std::vector<std::array<int, 3>> children = world.get_air_neighbours(current.x, current.y, current.z);
 
         // Loop through the children
-        for (Point child : children) {
+        for (std::array<int, 3> t_child : children) {
+            // Create a point object for the child
+            Point child(t_child[0], t_child[1], t_child[2]);
 
             // If the child is in the closed list, skip it
             // TODO: Could convert closed list to an unordered_set for O(1) lookup
@@ -98,8 +100,8 @@ std::vector<Point> a_star(Point start, Point end, Enviroment world) {
             }
 
             // Calculate the child's g, h, and f values
-            float tentative_g = get_with_default(g, current, INFINITY) + heuristic(current, child);
-            if (tentative_g < get_with_default(g, child, INFINITY)) {
+            float tentative_g = get_with_default(g, current, std::numeric_limits<double>::infinity()) + heuristic(current, child);
+            if (tentative_g < get_with_default(g, child, std::numeric_limits<double>::infinity())) {
                 came_from[child] = &current;
                 g[child] = tentative_g;
                 f[child] = g[child] + heuristic(child, end);

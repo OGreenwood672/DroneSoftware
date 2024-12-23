@@ -1,6 +1,5 @@
+#include "bresenham_3d.h"
 
-#include <vector>
-#include <array>
 #include <cmath>
 
 std::vector<std::array<int, 3>> bresenham_3d(const std::array<int, 3>& start, const std::array<int, 3>& end) {

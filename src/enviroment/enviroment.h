@@ -3,8 +3,10 @@
 
 #include "point/point.h"
 #include "octree/Octree.h"
+#include "pathfinding/bresenham_3d.h"
 
 #include <functional>
+#include <memory>
 
 // CENTIMETERS
 #define DRONE_WIDTH 100
@@ -22,7 +24,7 @@ class Enviroment {
 
 private:
 
-    std::vector<std::vector<std::vector<std::unique_ptr<Octree>>>> world;
+    std::unique_ptr<Octree> world[WORLD_WIDTH / DRONE_WIDTH][WORLD_DEPTH / DRONE_DEPTH][WORLD_HEIGHT / DRONE_HEIGHT];
     int width, depth, height;
 
     bool is_air(int x, int y, int z);
@@ -30,10 +32,10 @@ private:
 public:
     Enviroment();
 
-    Point update_enviroment(Point points[]);
+    Point update_enviroment(Point origin, Point points[]);
 
-    std::vector<int[3]> get_air_neighbours(int x, int y, int z);
-    std::vector<int[3]> get_neighbours(int x, int y, int z);
+    std::vector<std::array<int, 3>> get_air_neighbours(int x, int y, int z);
+    std::vector<std::array<int, 3>> get_neighbours(int x, int y, int z);
 
     std::unordered_set<Point> get_points();
     std::unordered_set<Point> get_shared_points(int x1, int y1, int z1, int x2, int y2, int z2);

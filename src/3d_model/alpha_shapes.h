@@ -1,8 +1,8 @@
 #ifndef ALPHA_SHAPES_H
 #define ALPHA_SHAPES_H
 
-#include "../point/point.h"
-#include "../enviroment.h"
+#include "../enviroment/point/point.h"
+#include "../enviroment/enviroment.h"
 
 #include <vector>
 #include <unordered_set>
@@ -17,6 +17,18 @@ struct Tetrahedron {
         : A(a), B(b), C(c), D(d) {}
 
     double getCircumsphereRadius() const;
+
+    bool operator==(const Tetrahedron& other) const {
+        return A == other.A && B == other.B && C == other.C && D == other.D;
+    }
+};
+
+template <>
+struct std::hash<Tetrahedron> {
+    size_t operator()(const Tetrahedron& t) const {
+        // Combine the hash values of the vertices
+        return std::hash<Point>()(t.A) ^ std::hash<Point>()(t.B) ^ std::hash<Point>()(t.C) ^ std::hash<Point>()(t.D);
+    }
 };
 
 class AlphaShapes {
@@ -27,7 +39,7 @@ private:
     double alpha;
     std::vector<Tetrahedron> tetrahedra;
 
-    std::vector<std::vector<std::vector<std::vector<Tetrahedron>>>> voxelTetrahedra;
+    std::vector<Tetrahedron> voxelTetrahedra[WORLD_WIDTH / DRONE_WIDTH][WORLD_DEPTH / DRONE_DEPTH][WORLD_HEIGHT / DRONE_HEIGHT];
     
     void computeVoxelAlphaShape(int x, int y, int z, std::unique_ptr<Octree>& octree);
 

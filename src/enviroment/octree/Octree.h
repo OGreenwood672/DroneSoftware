@@ -32,8 +32,6 @@ private:
     // Children nodes (8 subdivisions)
     std::vector<Octree*> children;
 
-    bool is_empty() const;
-
     // Helper to determine child position for a given point
     int determineChildPosition(int x, int y, int z, int midx, int midy, int midz) const;
 
@@ -50,6 +48,8 @@ public:
     bool find(int x, int y, int z) const;
 
     std::unordered_set<Point> get_points() const;
+
+    bool is_empty() const;
 };
 
 #endif // OCTREE_H

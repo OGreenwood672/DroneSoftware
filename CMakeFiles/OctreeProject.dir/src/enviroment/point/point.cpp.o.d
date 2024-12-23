@@ -1,7 +1,7 @@
-CMakeFiles/OctreeProject.dir/src/main.cpp.o: \
- /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/main.cpp \
+CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o: \
+ /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/enviroment/point/point.cpp \
  /usr/include/stdc-predef.h \
- /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/enviroment/octree/Octree.h \
+ /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/enviroment/point/point.h \
  /usr/include/c++/13/iostream /usr/include/c++/13/bits/requires_hosted.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
@@ -150,21 +150,4 @@ CMakeFiles/OctreeProject.dir/src/main.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc /usr/include/c++/13/vector \
- /usr/include/c++/13/bits/stl_uninitialized.h \
- /usr/include/c++/13/bits/stl_vector.h \
- /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/unordered_set \
- /usr/include/c++/13/bits/unordered_set.h \
- /usr/include/c++/13/bits/hashtable.h \
- /usr/include/c++/13/bits/hashtable_policy.h \
- /usr/include/c++/13/ext/aligned_buffer.h \
- /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/bits/node_handle.h \
- /usr/include/c++/13/bits/erase_if.h \
- /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/enviroment/octree/../point/point.h \
- /usr/include/c++/13/fstream /usr/include/c++/13/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/sstream \
- /usr/include/c++/13/bits/sstream.tcc
+ /usr/include/c++/13/bits/istream.tcc

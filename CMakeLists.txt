@@ -7,10 +7,21 @@ set(CMAKE_CXX_STANDARD 17)
 # Add source files
 add_executable(OctreeProject
     src/main.cpp
+
     src/enviroment/enviroment.cpp
+
     src/enviroment/point/point.cpp
     src/enviroment/octree/Octree.cpp
+
+    src/enviroment/pathfinding/a_star.cpp
+    src/enviroment/pathfinding/bresenham_3d.cpp
+    src/enviroment/pathfinding/locate_targets.cpp
+
     src/3d_model/PointCloud.cpp
+    src/3d_model/alpha_shapes.cpp
+
+    src/FlightController/FlightController.cpp
+
 )
 
 # Include directories
