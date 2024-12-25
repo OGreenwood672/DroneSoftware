@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I"/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src"
 
-CXX_FLAGS = -std=gnu++17
+CXX_FLAGS = -g -Wall -Wextra -pedantic -fsanitize=address,undefined -std=gnu++17
 

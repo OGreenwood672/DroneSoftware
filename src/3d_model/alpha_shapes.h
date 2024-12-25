@@ -6,6 +6,8 @@
 
 #include <vector>
 #include <unordered_set>
+#include <fstream>
+
 
 struct Tetrahedron {
     Point A;
@@ -35,9 +37,9 @@ class AlphaShapes {
 
 private:
 
-    Enviroment* world;
+    Enviroment& world;
     double alpha;
-    std::vector<Tetrahedron> tetrahedra;
+    std::unordered_set<Tetrahedron> tetrahedra;
 
     std::vector<Tetrahedron> voxelTetrahedra[WORLD_WIDTH / DRONE_WIDTH][WORLD_DEPTH / DRONE_DEPTH][WORLD_HEIGHT / DRONE_HEIGHT];
     
@@ -52,12 +54,14 @@ private:
     );
 
 public:
-    AlphaShapes(Enviroment* world, double alpha);
+    AlphaShapes(Enviroment& world, double alpha);
     ~AlphaShapes();
 
     void computeAlphaShapes();
 
-    std::unordered_set<Tetrahedron> getMergedAlphaShape() const;
+    void calculateMergedAlphaShape();
+
+    void export_to_obj(const std::string& filename) const;
 
 };
 

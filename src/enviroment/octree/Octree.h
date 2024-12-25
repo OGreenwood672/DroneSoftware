@@ -23,7 +23,7 @@
 class Octree {
 private:
     // If point == nullptr, node is internal.
-    // If point == (-1, -1, -1), node is empty.
+    // (Depracted) If point == (-1, -1, -1), node is empty.
     Point* point;
 
     // Boundaries of the cube
@@ -36,8 +36,8 @@ private:
     int determineChildPosition(int x, int y, int z, int midx, int midy, int midz) const;
 
 public:
-    Octree();
-    Octree(int x, int y, int z);                     // Point-only constructor
+    // Octree();
+    Octree(int x, int y, int z, int x1, int y1, int z1, int x2, int y2, int z2);                     // Point-only constructor
     Octree(int x1, int y1, int z1, int x2, int y2, int z2); // Boundary constructor
     ~Octree();                                       // Destructor to clean up dynamic memory
 
@@ -50,6 +50,10 @@ public:
     std::unordered_set<Point> get_points() const;
 
     bool is_empty() const;
+
+    Point* get_point() const;
+    Point* get_topLeftFront() const;
+    Point* get_bottomRightBack() const;
 };
 
 #endif // OCTREE_H

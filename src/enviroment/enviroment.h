@@ -13,9 +13,9 @@
 #define DRONE_DEPTH 100
 #define DRONE_HEIGHT 100
 
-#define WORLD_WIDTH 1000
-#define WORLD_DEPTH 1000
-#define WORLD_HEIGHT 1000
+#define WORLD_WIDTH 2000
+#define WORLD_DEPTH 2000
+#define WORLD_HEIGHT 2000
 
 #define BATCH_SIZE 15
 
@@ -37,8 +37,10 @@ public:
     std::vector<std::array<int, 3>> get_air_neighbours(int x, int y, int z);
     std::vector<std::array<int, 3>> get_neighbours(int x, int y, int z);
 
-    std::unordered_set<Point> get_points();
+    std::unordered_set<Point> get_points() const;
     std::unordered_set<Point> get_shared_points(int x1, int y1, int z1, int x2, int y2, int z2);
+
+    void export_point_cloud(const std::string& filename) const;
 
     void apply_to_world(std::function<void(int x, int y, int z, std::unique_ptr<Octree>&)> func);
 

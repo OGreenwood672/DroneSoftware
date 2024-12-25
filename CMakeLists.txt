@@ -4,6 +4,9 @@ project(OctreeProject)
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
 
+set(CMAKE_BUILD_TYPE Debug)  # Ensure Debug mode is used
+set(CMAKE_CXX_FLAGS_DEBUG "-g -Wall -Wextra -pedantic -fsanitize=address,undefined")
+
 # Add source files
 add_executable(OctreeProject
     src/main.cpp

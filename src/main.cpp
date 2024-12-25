@@ -1,5 +1,7 @@
 #include "enviroment/octree/Octree.h"
 #include "drone_communication/Communicator.h"
+#include "enviroment/enviroment.h"
+#include "3d_model/alpha_shapes.h"
 
 #include <iostream>
 #include <fstream>
@@ -56,10 +58,34 @@ void test_alpha_shape() {
 
     file.close(); // Close the file
 
-    // Output the points to verify
-    for (const auto& point : points) {
-        std::cout << "Point(" << point.x << ", " << point.y << ", " << point.z << ")\n";
+    Enviroment env;
+
+    // Update points with at BATCH_SIZE at a time
+    for (int i = 0; i < points.size(); i += BATCH_SIZE) {
+        Point batch[BATCH_SIZE];
+        bool skip = false;
+        for (int j = 0; j < BATCH_SIZE; j++) {
+            if (i + j < points.size()) {
+                batch[j] = points[i + j];
+            } else {
+                skip = true;
+            }
+        }
+
+        // Update the enviroment with the batch
+        if (!skip) {
+            env.update_enviroment(Point(0, 0, 0), batch);
+        }
     }
+
+    env.export_point_cloud("point_cloud.ply");
+
+    // AlphaShapes alpha_shapes(env, 50);
+
+    // alpha_shapes.computeAlphaShapes();
+    // alpha_shapes.calculateMergedAlphaShape();
+
+    // alpha_shapes.export_to_obj("output.obj");
 
 
 }

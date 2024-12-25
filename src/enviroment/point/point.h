@@ -10,6 +10,8 @@ struct Point {
     Point(int a, int b, int c);
     Point();
 
+    double distance(const Point& other) const;
+
     bool operator==(const Point& other) const {
         return x == other.x && y == other.y && z == other.z;
     }
