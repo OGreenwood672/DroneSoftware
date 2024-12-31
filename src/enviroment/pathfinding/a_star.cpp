@@ -115,11 +115,9 @@ std::vector<EnviromentBlock*> a_star(Enviroment& world, EnviromentBlock* start, 
 
                 // If the child is in the open list, remove it
                 // Add the child to the open list
-                bool in_open = false;
-                for (int i = 0; i < open.size(); ++i) {
+                for (std::size_t i = 0; i < open.size(); ++i) {
                     if (child == open[i]) {
                         open.erase(open.begin() + i);
-                        in_open = true;
                         break;
                     }
                 }

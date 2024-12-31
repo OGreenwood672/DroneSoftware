@@ -34,13 +34,15 @@ public:
 
     void apply_to_world(std::function<void(int x, int y, int z, EnviromentBlock* block)> func);
 
-    float calculate_scan_score(std::array<int, 3> origin, int directions) const;
+    float calculate_scan_score(EnviromentBlock* origin, int directions) const;
 
     EnviromentBlock* get_block(int x, int y, int z) const;
 
     int get_width() const;
     int get_depth() const;
     int get_height() const;
+
+    EnviromentBlock* get_next_location(EnviromentBlock* current) const;
 
 };
 

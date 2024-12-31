@@ -175,6 +175,81 @@ void Enviroment::export_point_cloud(const std::string& filename) const {
 
 }
 
+//TODO: Add modifier for distance from current
+EnviromentBlock* Enviroment::get_next_location(EnviromentBlock* current) const {
+
+    int directions = 10;
+
+    EnviromentBlock* best = current;
+    float best_score = calculate_scan_score(current, directions);
+    float best_distance = 99999999;
+    
+    for (int i = 0; i < width; ++i) {
+        for (int j = 0; j < depth; ++j) {
+            for (int k = 0; k < height; ++k) {
+
+                EnviromentBlock* block = get_block(i, j, k);
+                if (block->is_unscanned()) {
+                    continue;
+                }
+
+                float block_score = calculate_scan_score(block, directions);
+                float distance = current->get_distance(block);
+
+                if (block_score > best_score || (block_score == best_score && distance < best_distance)) {
+                    best = block;
+                    best_score = block_score;
+                    best_distance = distance;
+                }
+            }
+        }
+    }
+
+    return best;
+
+}
+
+float Enviroment::calculate_scan_score(EnviromentBlock* origin, int directions) const {
+
+    std::vector<std::array<float, 3>> vectors = generate_fibonacci_sphere_vectors(directions);
+
+    float score = 0;
+    int max_dist = 8000; // (8m)
+
+    std::array<int, 3> min_bound = {0, 0, 0};
+    std::array<int, 3> max_bound = {get_width(), get_depth(), get_height()};
+    std::array<int, 3> origin_coords = origin->get_position();
+
+    for (std::array<float, 3> vector : vectors) {
+        
+        // Calculate furthest part of the world from the origin with vector
+        std::array<int, 3> furthest = get_furthest_point(min_bound, max_bound, origin_coords, vector);
+        // limit to max distance
+        furthest = limit_distance(origin_coords, furthest, max_dist);
+
+        std::vector<std::array<int, 3>> points = bresenham_3d(origin_coords, furthest);
+
+        // Prevent scanning right next to potential blocks
+        if (points.size() == 0 || !get_block(points[0][0], points[0][1], points[0][2])->is_air()) {
+            continue;
+        }
+
+        for (std::array<int, 3> point : points) {
+            EnviromentBlock* block = get_block(point[0], point[1], point[2]);
+            if (block->is_unscanned()) {
+                score += 1;
+                break;
+            } else if (block->is_block()) {
+                break;
+            }
+        }
+
+    }
+
+    return score / directions;
+
+}
+
 void Enviroment::apply_to_world(std::function<void(int x, int y, int z, EnviromentBlock* block)> func) {
     for (int i = 0; i < width; ++i) {
         for (int j = 0; j < depth; ++j) {
@@ -199,35 +274,4 @@ int Enviroment::get_depth() const {
 
 int Enviroment::get_height() const {
     return height;
-}
-
-float Enviroment::calculate_scan_score(std::array<int, 3> origin, int directions) const {
-
-    std::vector<std::array<float, 3>> vectors = generate_fibonacci_sphere_vectors(directions);
-
-    float score = 0;
-
-    std::array<int, 3> min_bound = {0, 0, 0};
-    std::array<int, 3> max_bound = {get_width(), get_depth(), get_height()};
-
-    for (std::array<float, 3> vector : vectors) {
-        
-        // Calculate furthest part of the world from the origin with vector
-        std::array<int, 3> furthest = get_furthest_point(min_bound, max_bound, origin, vector);
-        std::vector<std::array<int, 3>> points = bresenham_3d(origin, furthest);
-
-        for (std::array<int, 3> point : points) {
-            EnviromentBlock* block = get_block(point[0], point[1], point[2]);
-            if (block->is_unscanned()) {
-                score += 1;
-                break;
-            } else if (block->is_block()) {
-                break;
-            }
-        }
-
-    }
-
-    return score / directions;
-
 }

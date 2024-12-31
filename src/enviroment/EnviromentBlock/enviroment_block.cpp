@@ -22,6 +22,11 @@ std::unordered_set<Point> EnviromentBlock::get_points() const {
     return octree->get_points();
 };
 
+float EnviromentBlock::get_distance(EnviromentBlock* other) const {
+    std::array<int, 3> other_pos = other->get_position();
+    return sqrt(pow(x - other_pos[0], 2) + pow(y - other_pos[1], 2) + pow(z - other_pos[2], 2));
+};
+
 bool EnviromentBlock::is_air() const {
     if (octree == nullptr) {
         return false;

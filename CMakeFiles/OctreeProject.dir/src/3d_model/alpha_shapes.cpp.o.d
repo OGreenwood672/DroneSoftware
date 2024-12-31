@@ -187,10 +187,8 @@ CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o: \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/array \
- /usr/include/c++/13/compare \
- /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/pathfinding/bresenham_3d.h \
- /usr/include/c++/13/cmath /usr/include/math.h \
- /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/c++/13/compare /usr/include/c++/13/cmath \
+ /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
@@ -212,6 +210,7 @@ CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o: \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
  /usr/include/c++/13/tr1/riemann_zeta.tcc \
+ /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/pathfinding/bresenham_3d.h \
  /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/pathfinding/generate_fibonacci_sphere_vectors.h \
  /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/globals.h \
  /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \

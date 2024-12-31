@@ -116,5 +116,21 @@ inline std::array<int, 3> get_furthest_point(const std::array<int, 3>& min_bound
 
 }
 
+inline std::array<int, 3> limit_distance(std::array<int, 3> origin, std::array<int, 3> furthest, int max_dist) {
+    int dx = furthest[0] - origin[0];
+    int dy = furthest[1] - origin[1];
+    int dz = furthest[2] - origin[2];
+
+    double dist = sqrt(dx * dx + dy * dy + dz * dz);
+
+    if (dist > max_dist) {
+        double scale = max_dist / dist;
+        furthest[0] = origin[0] + scale * dx;
+        furthest[1] = origin[1] + scale * dy;
+        furthest[2] = origin[2] + scale * dz;
+    }
+
+    return furthest;
+}
 
 #endif

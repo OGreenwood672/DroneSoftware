@@ -8,7 +8,7 @@
 #include <unordered_set>
 #include <array>
 #include <iostream>
-
+#include <cmath>
 
 class EnviromentBlock {
 
@@ -34,6 +34,7 @@ public:
 
     void set_position(int x, int y, int z);
     std::array<int, 3> get_position() const;
+    float get_distance(EnviromentBlock* other) const;
 
     std::unordered_set<Point> get_points() const;
 
