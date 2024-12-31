@@ -43,7 +43,7 @@ private:
 
     std::vector<Tetrahedron> voxelTetrahedra[WORLD_WIDTH / DRONE_WIDTH][WORLD_DEPTH / DRONE_DEPTH][WORLD_HEIGHT / DRONE_HEIGHT];
     
-    void computeVoxelAlphaShape(int x, int y, int z, std::unique_ptr<Octree>& octree);
+    void computeVoxelAlphaShape(int x, int y, int z, std::unordered_set<Point> points);
 
     bool isPointInCircumsphere(const Point p, const Tetrahedron& t) const;
 

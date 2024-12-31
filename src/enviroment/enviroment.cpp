@@ -14,19 +14,35 @@ Enviroment::Enviroment() {
         return;
     }
 
-    // Voxel is unscanned -> octree = nullptr
-    // Voxel is air -> octree = empty
-    // Voxel is occupied -> octree = points
-
     // Also defined on world declaration
     width = WORLD_WIDTH / DRONE_WIDTH;
     depth = WORLD_DEPTH / DRONE_DEPTH;
     height = WORLD_HEIGHT / DRONE_HEIGHT;
 
+    for (int i = 0; i < width; ++i) {
+        for (int j = 0; j < depth; ++j) {
+            for (int k = 0; k < height; ++k) {
+                world[i][j][k] = new EnviromentBlock(i, j, k);
+            }
+        }
+    }
+
+};
+
+Enviroment::~Enviroment() {
+    for (int i = 0; i < width; ++i) {
+        for (int j = 0; j < depth; ++j) {
+            for (int k = 0; k < height; ++k) {
+                delete world[i][j][k];
+            }
+        }
+    }
 };
 
 
 //TODO: Add point to multiple voxels if it is on the boundary
+//TODO: Add confidence level of air block
+//TODO: Add SLAM (return offset of drone from origin)
 Point Enviroment::update_enviroment(Point origin, Point points[]) {
 
     int origin_x = origin.x / DRONE_WIDTH;
@@ -45,29 +61,16 @@ Point Enviroment::update_enviroment(Point origin, Point points[]) {
             int y_ = p[1];
             int z_ = p[2];
 
-            if (world[x_][y_][z_] == nullptr) {
-                world[x_][y_][z_] = std::make_unique<Octree>(x_ * DRONE_WIDTH, y_ * DRONE_HEIGHT, z_ * DRONE_DEPTH,
-                                                            (x_ + 1) * DRONE_WIDTH, (y_ + 1) * DRONE_HEIGHT, (z_ + 1) * DRONE_DEPTH);
-            }
+            world[x_][y_][z_]->increment_air_count();
         }
         
-        world[x][y][z]->insert(points[i].x, points[i].y, points[i].z);
+        world[x][y][z]->add_point(points[i]);
     }
     return Point(0, 0, 0);
 };
 
-bool Enviroment::is_air(int x, int y, int z) {
-
-    if (world[x][y][z] == nullptr) {
-        return false;
-    }
-    
-    return world[x][y][z]->is_empty();
-
-};
-
-std::vector<std::array<int, 3>> Enviroment::get_air_neighbours(int x, int y, int z) {
-    std::vector<std::array<int, 3>> neighbours;
+std::vector<EnviromentBlock*> Enviroment::get_air_neighbours(int x, int y, int z) {
+    std::vector<EnviromentBlock*> neighbours;
 
     for (int i = -1; i <= 1; ++i) {
         for (int j = -1; j <= 1; ++j) {
@@ -84,8 +87,8 @@ std::vector<std::array<int, 3>> Enviroment::get_air_neighbours(int x, int y, int
                     continue;
                 }
 
-                if (is_air(x_, y_, z_)) {
-                    neighbours.push_back({x_, y_, z_});
+                if (get_block(x_, y_, z_)->is_air()) {
+                    neighbours.push_back(get_block(x_, y_, z_));
                 }
             }
         }
@@ -94,8 +97,8 @@ std::vector<std::array<int, 3>> Enviroment::get_air_neighbours(int x, int y, int
     return neighbours;
 };
 
-std::vector<std::array<int, 3>> Enviroment::get_neighbours(int x, int y, int z) {
-    std::vector<std::array<int, 3>> neighbours;
+std::vector<EnviromentBlock*> Enviroment::get_neighbours(int x, int y, int z) {
+    std::vector<EnviromentBlock*> neighbours;
 
     for (int i = -1; i <= 1; ++i) {
         for (int j = -1; j <= 1; ++j) {
@@ -112,37 +115,12 @@ std::vector<std::array<int, 3>> Enviroment::get_neighbours(int x, int y, int z) 
                     continue;
                 }
 
-                neighbours.push_back({x_, y_, z_});
+                neighbours.push_back(get_block(x_, y_, z_));
             }
         }
     }
 
     return neighbours;
-}
-
-
-std::unordered_set<Point> Enviroment::get_shared_points(int x1, int y1, int z1, int x2, int y2, int z2) {
-    std::unordered_set<Point> sharedPoints;
-    
-    if ((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1) + (z2 - z1) * (z2 - z1) != 1) {
-        return sharedPoints;
-    }
-
-    if (world[x1][y1][z1] == nullptr || world[x2][y2][z2] == nullptr) {
-        return sharedPoints;
-    }
-
-
-    std::unordered_set<Point> points1 = world[x1][y1][z1]->get_points();
-    std::unordered_set<Point> points2 = world[x2][y2][z2]->get_points();
-
-    for (const Point& p : points1) {
-        if (points2.find(p) != points2.end()) {
-            sharedPoints.insert(p);
-        }
-    }
-    
-    return sharedPoints;
 }
 
 std::unordered_set<Point> Enviroment::get_points() const {
@@ -197,14 +175,18 @@ void Enviroment::export_point_cloud(const std::string& filename) const {
 
 }
 
-void Enviroment::apply_to_world(std::function<void(int x, int y, int z, std::unique_ptr<Octree>&)> func) {
+void Enviroment::apply_to_world(std::function<void(int x, int y, int z, EnviromentBlock* block)> func) {
     for (int i = 0; i < width; ++i) {
         for (int j = 0; j < depth; ++j) {
             for (int k = 0; k < height; ++k) {
-                func(i, j, k, world[i][j][k]);
+                func(i, j, k, get_block(i, j, k));
             }
         }
     }
+}
+
+EnviromentBlock* Enviroment::get_block(int x, int y, int z) const {
+    return world[x][y][z];
 }
 
 int Enviroment::get_width() const {
@@ -217,4 +199,35 @@ int Enviroment::get_depth() const {
 
 int Enviroment::get_height() const {
     return height;
+}
+
+float Enviroment::calculate_scan_score(std::array<int, 3> origin, int directions) const {
+
+    std::vector<std::array<float, 3>> vectors = generate_fibonacci_sphere_vectors(directions);
+
+    float score = 0;
+
+    std::array<int, 3> min_bound = {0, 0, 0};
+    std::array<int, 3> max_bound = {get_width(), get_depth(), get_height()};
+
+    for (std::array<float, 3> vector : vectors) {
+        
+        // Calculate furthest part of the world from the origin with vector
+        std::array<int, 3> furthest = get_furthest_point(min_bound, max_bound, origin, vector);
+        std::vector<std::array<int, 3>> points = bresenham_3d(origin, furthest);
+
+        for (std::array<int, 3> point : points) {
+            EnviromentBlock* block = get_block(point[0], point[1], point[2]);
+            if (block->is_unscanned()) {
+                score += 1;
+                break;
+            } else if (block->is_block()) {
+                break;
+            }
+        }
+
+    }
+
+    return score / directions;
+
 }

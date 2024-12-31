@@ -5,7 +5,7 @@
 #include <vector>
 #include <unordered_set>
 
-#include "../point/point.h"
+#include "../../point/point.h"
 
 // Constants for child node positions
 #define TopLeftFront 0

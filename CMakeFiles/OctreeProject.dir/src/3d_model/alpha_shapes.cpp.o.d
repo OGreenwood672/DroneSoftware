@@ -154,7 +154,7 @@ CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o: \
  /usr/include/c++/13/bits/istream.tcc \
  /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/enviroment.h \
  /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/point/point.h \
- /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/octree/Octree.h \
+ /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/EnviromentBlock/octree/Octree.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
@@ -166,17 +166,11 @@ CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o: \
  /usr/include/c++/13/bits/enable_special_members.h \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/erase_if.h \
- /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/octree/../point/point.h \
- /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/pathfinding/bresenham_3d.h \
- /usr/include/c++/13/array /usr/include/c++/13/compare \
- /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
- /usr/include/c++/13/unordered_map \
- /usr/include/c++/13/bits/unordered_map.h \
- /usr/include/c++/13/bits/stl_algo.h \
- /usr/include/c++/13/bits/algorithmfwd.h \
- /usr/include/c++/13/bits/stl_heap.h \
- /usr/include/c++/13/bits/uniform_int_dist.h \
- /usr/include/c++/13/bits/stl_tempbuf.h /usr/include/c++/13/memory \
+ /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/EnviromentBlock/octree/../../point/point.h \
+ /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/EnviromentBlock/enviroment_block.h \
+ /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/EnviromentBlock/../globals.h \
+ /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/EnviromentBlock/octree/Octree.h \
+ /usr/include/c++/13/memory /usr/include/c++/13/bits/stl_tempbuf.h \
  /usr/include/c++/13/bits/stl_raw_storage_iter.h \
  /usr/include/c++/13/bits/align.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
@@ -192,13 +186,11 @@ CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o: \
  /usr/include/c++/13/bits/atomic_lockfree_defines.h \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/fstream \
- /usr/include/c++/13/bits/codecvt.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
- /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/algorithm \
- /usr/include/c++/13/pstl/glue_algorithm_defs.h /usr/include/c++/13/cmath \
- /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/array \
+ /usr/include/c++/13/compare \
+ /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/pathfinding/bresenham_3d.h \
+ /usr/include/c++/13/cmath /usr/include/math.h \
+ /usr/include/x86_64-linux-gnu/bits/math-vector.h \
  /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
  /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
@@ -219,4 +211,18 @@ CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o: \
  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc
+ /usr/include/c++/13/tr1/riemann_zeta.tcc \
+ /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/pathfinding/generate_fibonacci_sphere_vectors.h \
+ /mnt/c/Users/green/OneDrive/Desktop/3D\ Mapping/src/3d_model/../enviroment/globals.h \
+ /usr/include/c++/13/functional /usr/include/c++/13/bits/std_function.h \
+ /usr/include/c++/13/unordered_map \
+ /usr/include/c++/13/bits/unordered_map.h \
+ /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/algorithmfwd.h \
+ /usr/include/c++/13/bits/stl_heap.h \
+ /usr/include/c++/13/bits/uniform_int_dist.h /usr/include/c++/13/fstream \
+ /usr/include/c++/13/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/13/bits/c++io.h \
+ /usr/include/c++/13/bits/fstream.tcc /usr/include/c++/13/algorithm \
+ /usr/include/c++/13/pstl/glue_algorithm_defs.h

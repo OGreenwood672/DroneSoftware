@@ -1,4 +1,3 @@
-#include "enviroment/octree/Octree.h"
 #include "drone_communication/Communicator.h"
 #include "enviroment/enviroment.h"
 #include "3d_model/alpha_shapes.h"

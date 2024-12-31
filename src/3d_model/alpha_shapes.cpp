@@ -13,13 +13,7 @@ AlphaShapes::~AlphaShapes() {}
 
 // }
 
-void AlphaShapes::computeVoxelAlphaShape(int x, int y, int z, std::unique_ptr<Octree>& octree) {
-
-    if (octree == nullptr) {
-        return;
-    }
-
-    std::unordered_set<Point> points = octree->get_points();
+void AlphaShapes::computeVoxelAlphaShape(int x, int y, int z, std::unordered_set<Point> points) {
 
     std::vector<Point> pointsVec(points.begin(), points.end());
 
@@ -174,8 +168,8 @@ void AlphaShapes::mergeBoundaryTetrahedra(
 
 void AlphaShapes::computeAlphaShapes() {
 
-    world.apply_to_world([&](int x, int y, int z, std::unique_ptr<Octree>& octree) {
-        computeVoxelAlphaShape(x, y, z, octree);
+    world.apply_to_world([&](int x, int y, int z, EnviromentBlock* block) {
+        computeVoxelAlphaShape(x, y, z, block->get_points());
         if (voxelTetrahedra[x][y][z].size() > 0)
             std::cout << "Voxel: " << x << " " << y << " " << z << " Tetrahedra: " << voxelTetrahedra[x][y][z].size() << std::endl;
     });
@@ -184,21 +178,23 @@ void AlphaShapes::computeAlphaShapes() {
     for (int i = 0; i < world.get_width(); ++i) {
         for (int j = 0; j < world.get_depth(); ++j) {
             for (int k = 0; k < world.get_height(); ++k) {
-                std::vector<std::array<int, 3>> neighbours = world.get_neighbours(i, j, k);
+                EnviromentBlock* main_block = world.get_block(i, j, k);
+                std::vector<EnviromentBlock*> neighbours = world.get_neighbours(i, j, k);
 
-                for (std::array<int, 3> n : neighbours) {
-                    if (n[0] < i || n[1] < j || n[2] < k) {
+                for (EnviromentBlock* block : neighbours) {
+                    std::array<int, 3> pos = block->get_position();
+                    if (pos[0] < i || pos[1] < j || pos[2] < k) {
                         continue;
                     }
-                    std::cout << "Shared points: " << i << " " << j << " " << k << " " << n[0] << " " << n[1] << " " << n[2] << std::endl;
-                    std::unordered_set<Point> sharedPoints = world.get_shared_points(i, j, k, n[0], n[1], n[2]);
+                    std::cout << "Shared points: " << i << " " << j << " " << k << " " << pos[0] << " " << pos[1] << " " << pos[2] << std::endl;
+                    std::unordered_set<Point> sharedPoints = main_block->get_shared_points(block);
                     std::cout << "Shared points: " << sharedPoints.size() << std::endl;
 
                     if (!sharedPoints.empty()) {
                         mergeBoundaryTetrahedra(
                             sharedPoints,
                             voxelTetrahedra[i][j][k],
-                            voxelTetrahedra[n[0]][n[1]][n[2]]
+                            voxelTetrahedra[pos[0]][pos[1]][pos[2]]
                         );
                     }
                 }

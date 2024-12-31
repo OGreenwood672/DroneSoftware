@@ -129,30 +129,6 @@ OctreeProject/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/build
 .PHONY : OctreeProject/fast
 
-src/3d_model/PointCloud.o: src/3d_model/PointCloud.cpp.o
-.PHONY : src/3d_model/PointCloud.o
-
-# target to build an object file
-src/3d_model/PointCloud.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.o
-.PHONY : src/3d_model/PointCloud.cpp.o
-
-src/3d_model/PointCloud.i: src/3d_model/PointCloud.cpp.i
-.PHONY : src/3d_model/PointCloud.i
-
-# target to preprocess a source file
-src/3d_model/PointCloud.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.i
-.PHONY : src/3d_model/PointCloud.cpp.i
-
-src/3d_model/PointCloud.s: src/3d_model/PointCloud.cpp.s
-.PHONY : src/3d_model/PointCloud.s
-
-# target to generate assembly for a file
-src/3d_model/PointCloud.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/3d_model/PointCloud.cpp.s
-.PHONY : src/3d_model/PointCloud.cpp.s
-
 src/3d_model/alpha_shapes.o: src/3d_model/alpha_shapes.cpp.o
 .PHONY : src/3d_model/alpha_shapes.o
 
@@ -225,6 +201,54 @@ src/drone_communication/Communicator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.s
 .PHONY : src/drone_communication/Communicator.cpp.s
 
+src/enviroment/EnviromentBlock/enviroment_block.o: src/enviroment/EnviromentBlock/enviroment_block.cpp.o
+.PHONY : src/enviroment/EnviromentBlock/enviroment_block.o
+
+# target to build an object file
+src/enviroment/EnviromentBlock/enviroment_block.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/enviroment_block.cpp.o
+.PHONY : src/enviroment/EnviromentBlock/enviroment_block.cpp.o
+
+src/enviroment/EnviromentBlock/enviroment_block.i: src/enviroment/EnviromentBlock/enviroment_block.cpp.i
+.PHONY : src/enviroment/EnviromentBlock/enviroment_block.i
+
+# target to preprocess a source file
+src/enviroment/EnviromentBlock/enviroment_block.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/enviroment_block.cpp.i
+.PHONY : src/enviroment/EnviromentBlock/enviroment_block.cpp.i
+
+src/enviroment/EnviromentBlock/enviroment_block.s: src/enviroment/EnviromentBlock/enviroment_block.cpp.s
+.PHONY : src/enviroment/EnviromentBlock/enviroment_block.s
+
+# target to generate assembly for a file
+src/enviroment/EnviromentBlock/enviroment_block.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/enviroment_block.cpp.s
+.PHONY : src/enviroment/EnviromentBlock/enviroment_block.cpp.s
+
+src/enviroment/EnviromentBlock/octree/Octree.o: src/enviroment/EnviromentBlock/octree/Octree.cpp.o
+.PHONY : src/enviroment/EnviromentBlock/octree/Octree.o
+
+# target to build an object file
+src/enviroment/EnviromentBlock/octree/Octree.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/octree/Octree.cpp.o
+.PHONY : src/enviroment/EnviromentBlock/octree/Octree.cpp.o
+
+src/enviroment/EnviromentBlock/octree/Octree.i: src/enviroment/EnviromentBlock/octree/Octree.cpp.i
+.PHONY : src/enviroment/EnviromentBlock/octree/Octree.i
+
+# target to preprocess a source file
+src/enviroment/EnviromentBlock/octree/Octree.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/octree/Octree.cpp.i
+.PHONY : src/enviroment/EnviromentBlock/octree/Octree.cpp.i
+
+src/enviroment/EnviromentBlock/octree/Octree.s: src/enviroment/EnviromentBlock/octree/Octree.cpp.s
+.PHONY : src/enviroment/EnviromentBlock/octree/Octree.s
+
+# target to generate assembly for a file
+src/enviroment/EnviromentBlock/octree/Octree.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/octree/Octree.cpp.s
+.PHONY : src/enviroment/EnviromentBlock/octree/Octree.cpp.s
+
 src/enviroment/enviroment.o: src/enviroment/enviroment.cpp.o
 .PHONY : src/enviroment/enviroment.o
 
@@ -249,30 +273,6 @@ src/enviroment/enviroment.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.s
 .PHONY : src/enviroment/enviroment.cpp.s
 
-src/enviroment/octree/Octree.o: src/enviroment/octree/Octree.cpp.o
-.PHONY : src/enviroment/octree/Octree.o
-
-# target to build an object file
-src/enviroment/octree/Octree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.o
-.PHONY : src/enviroment/octree/Octree.cpp.o
-
-src/enviroment/octree/Octree.i: src/enviroment/octree/Octree.cpp.i
-.PHONY : src/enviroment/octree/Octree.i
-
-# target to preprocess a source file
-src/enviroment/octree/Octree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.i
-.PHONY : src/enviroment/octree/Octree.cpp.i
-
-src/enviroment/octree/Octree.s: src/enviroment/octree/Octree.cpp.s
-.PHONY : src/enviroment/octree/Octree.s
-
-# target to generate assembly for a file
-src/enviroment/octree/Octree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/octree/Octree.cpp.s
-.PHONY : src/enviroment/octree/Octree.cpp.s
-
 src/enviroment/pathfinding/a_star.o: src/enviroment/pathfinding/a_star.cpp.o
 .PHONY : src/enviroment/pathfinding/a_star.o
 
@@ -296,54 +296,6 @@ src/enviroment/pathfinding/a_star.s: src/enviroment/pathfinding/a_star.cpp.s
 src/enviroment/pathfinding/a_star.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.s
 .PHONY : src/enviroment/pathfinding/a_star.cpp.s
-
-src/enviroment/pathfinding/bresenham_3d.o: src/enviroment/pathfinding/bresenham_3d.cpp.o
-.PHONY : src/enviroment/pathfinding/bresenham_3d.o
-
-# target to build an object file
-src/enviroment/pathfinding/bresenham_3d.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/bresenham_3d.cpp.o
-.PHONY : src/enviroment/pathfinding/bresenham_3d.cpp.o
-
-src/enviroment/pathfinding/bresenham_3d.i: src/enviroment/pathfinding/bresenham_3d.cpp.i
-.PHONY : src/enviroment/pathfinding/bresenham_3d.i
-
-# target to preprocess a source file
-src/enviroment/pathfinding/bresenham_3d.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/bresenham_3d.cpp.i
-.PHONY : src/enviroment/pathfinding/bresenham_3d.cpp.i
-
-src/enviroment/pathfinding/bresenham_3d.s: src/enviroment/pathfinding/bresenham_3d.cpp.s
-.PHONY : src/enviroment/pathfinding/bresenham_3d.s
-
-# target to generate assembly for a file
-src/enviroment/pathfinding/bresenham_3d.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/bresenham_3d.cpp.s
-.PHONY : src/enviroment/pathfinding/bresenham_3d.cpp.s
-
-src/enviroment/pathfinding/locate_targets.o: src/enviroment/pathfinding/locate_targets.cpp.o
-.PHONY : src/enviroment/pathfinding/locate_targets.o
-
-# target to build an object file
-src/enviroment/pathfinding/locate_targets.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/locate_targets.cpp.o
-.PHONY : src/enviroment/pathfinding/locate_targets.cpp.o
-
-src/enviroment/pathfinding/locate_targets.i: src/enviroment/pathfinding/locate_targets.cpp.i
-.PHONY : src/enviroment/pathfinding/locate_targets.i
-
-# target to preprocess a source file
-src/enviroment/pathfinding/locate_targets.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/locate_targets.cpp.i
-.PHONY : src/enviroment/pathfinding/locate_targets.cpp.i
-
-src/enviroment/pathfinding/locate_targets.s: src/enviroment/pathfinding/locate_targets.cpp.s
-.PHONY : src/enviroment/pathfinding/locate_targets.s
-
-# target to generate assembly for a file
-src/enviroment/pathfinding/locate_targets.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/locate_targets.cpp.s
-.PHONY : src/enviroment/pathfinding/locate_targets.cpp.s
 
 src/enviroment/point/point.o: src/enviroment/point/point.cpp.o
 .PHONY : src/enviroment/point/point.o
@@ -402,9 +354,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... OctreeProject"
-	@echo "... src/3d_model/PointCloud.o"
-	@echo "... src/3d_model/PointCloud.i"
-	@echo "... src/3d_model/PointCloud.s"
 	@echo "... src/3d_model/alpha_shapes.o"
 	@echo "... src/3d_model/alpha_shapes.i"
 	@echo "... src/3d_model/alpha_shapes.s"
@@ -414,21 +363,18 @@ help:
 	@echo "... src/drone_communication/Communicator.o"
 	@echo "... src/drone_communication/Communicator.i"
 	@echo "... src/drone_communication/Communicator.s"
+	@echo "... src/enviroment/EnviromentBlock/enviroment_block.o"
+	@echo "... src/enviroment/EnviromentBlock/enviroment_block.i"
+	@echo "... src/enviroment/EnviromentBlock/enviroment_block.s"
+	@echo "... src/enviroment/EnviromentBlock/octree/Octree.o"
+	@echo "... src/enviroment/EnviromentBlock/octree/Octree.i"
+	@echo "... src/enviroment/EnviromentBlock/octree/Octree.s"
 	@echo "... src/enviroment/enviroment.o"
 	@echo "... src/enviroment/enviroment.i"
 	@echo "... src/enviroment/enviroment.s"
-	@echo "... src/enviroment/octree/Octree.o"
-	@echo "... src/enviroment/octree/Octree.i"
-	@echo "... src/enviroment/octree/Octree.s"
 	@echo "... src/enviroment/pathfinding/a_star.o"
 	@echo "... src/enviroment/pathfinding/a_star.i"
 	@echo "... src/enviroment/pathfinding/a_star.s"
-	@echo "... src/enviroment/pathfinding/bresenham_3d.o"
-	@echo "... src/enviroment/pathfinding/bresenham_3d.i"
-	@echo "... src/enviroment/pathfinding/bresenham_3d.s"
-	@echo "... src/enviroment/pathfinding/locate_targets.o"
-	@echo "... src/enviroment/pathfinding/locate_targets.i"
-	@echo "... src/enviroment/pathfinding/locate_targets.s"
 	@echo "... src/enviroment/point/point.o"
 	@echo "... src/enviroment/point/point.i"
 	@echo "... src/enviroment/point/point.s"

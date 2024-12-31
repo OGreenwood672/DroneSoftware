@@ -14,13 +14,11 @@ add_executable(OctreeProject
     src/enviroment/enviroment.cpp
 
     src/enviroment/point/point.cpp
-    src/enviroment/octree/Octree.cpp
+    src/enviroment/EnviromentBlock/octree/Octree.cpp
+    src/enviroment/EnviromentBlock/enviroment_block.cpp
 
     src/enviroment/pathfinding/a_star.cpp
-    src/enviroment/pathfinding/bresenham_3d.cpp
-    src/enviroment/pathfinding/locate_targets.cpp
 
-    src/3d_model/PointCloud.cpp
     src/3d_model/alpha_shapes.cpp
 
     src/FlightController/FlightController.cpp
