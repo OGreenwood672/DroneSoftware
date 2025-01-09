@@ -60,10 +60,10 @@ void test_alpha_shape() {
     Enviroment env;
 
     // Update points with at BATCH_SIZE at a time
-    for (int i = 0; i < points.size(); i += BATCH_SIZE) {
+    for (size_t i = 0; i < points.size(); i += BATCH_SIZE) {
         Point batch[BATCH_SIZE];
         bool skip = false;
-        for (int j = 0; j < BATCH_SIZE; j++) {
+        for (size_t j = 0; j < BATCH_SIZE; j++) {
             if (i + j < points.size()) {
                 batch[j] = points[i + j];
             } else {
@@ -73,7 +73,8 @@ void test_alpha_shape() {
 
         // Update the enviroment with the batch
         if (!skip) {
-            env.update_enviroment(Point(0, 0, 0), batch);
+            Point pnt = env.update_enviroment(Point(0, 0, 0), batch);
+            std::cout << "New origin: " << pnt.x << " " << pnt.y << " " << pnt.z << std::endl;
         }
     }
 

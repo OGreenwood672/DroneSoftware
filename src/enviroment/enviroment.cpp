@@ -40,35 +40,6 @@ Enviroment::~Enviroment() {
 };
 
 
-//TODO: Add point to multiple voxels if it is on the boundary
-//TODO: Add confidence level of air block
-//TODO: Add SLAM (return offset of drone from origin)
-Point Enviroment::update_enviroment(Point origin, Point points[]) {
-
-    int origin_x = origin.x / DRONE_WIDTH;
-    int origin_y = origin.y / DRONE_HEIGHT;
-    int origin_z = origin.z / DRONE_DEPTH;
-
-    for (int i = 0; i < BATCH_SIZE; ++i) {
-        int x = points[i].x / DRONE_WIDTH;
-        int y = points[i].y / DRONE_HEIGHT;
-        int z = points[i].z / DRONE_DEPTH;
-
-        std::vector<std::array<int, 3>> path = bresenham_3d({origin_x, origin_y, origin_z}, {x, y, z});
-
-        for (std::array<int, 3> p : path) {
-            int x_ = p[0];
-            int y_ = p[1];
-            int z_ = p[2];
-
-            world[x_][y_][z_]->increment_air_count();
-        }
-        
-        world[x][y][z]->add_point(points[i]);
-    }
-    return Point(0, 0, 0);
-};
-
 std::vector<EnviromentBlock*> Enviroment::get_air_neighbours(int x, int y, int z) {
     std::vector<EnviromentBlock*> neighbours;
 
@@ -130,8 +101,6 @@ std::unordered_set<Point> Enviroment::get_points() const {
             for (int k = 0; k < height; ++k) {
                 if (world[i][j][k] != nullptr) {
                     std::unordered_set<Point> pnts = world[i][j][k]->get_points();
-                    // coord and number of points
-                    std::cout << i << " " << j << " " << k << " " << pnts.size() << std::endl;
                     points.insert(pnts.begin(), pnts.end());
                 }
             }

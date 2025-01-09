@@ -45,6 +45,14 @@ bool EnviromentBlock::is_block() const {
     return point_count > 0;
 };
 
+Point EnviromentBlock::get_center() const {
+    return Point(
+        x * DRONE_WIDTH + DRONE_WIDTH / 2,
+        y * DRONE_DEPTH + DRONE_DEPTH / 2,
+        z * DRONE_HEIGHT + DRONE_HEIGHT / 2
+    );
+};
+
 std::unordered_set<Point> EnviromentBlock::get_shared_points(EnviromentBlock* block) const {
 
     // If not neighbouts

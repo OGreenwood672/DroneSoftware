@@ -47,6 +47,8 @@ public:
     void increment_air_count();
     void add_point(Point p);
 
+    Point get_center() const;
+
 };
 
 

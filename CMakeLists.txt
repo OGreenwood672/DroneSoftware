@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(OctreeProject)
 
+find_package(PCL COMPONENTS common registration REQUIRED)
+
 # Set C++ standard
 set(CMAKE_CXX_STANDARD 17)
 
@@ -16,6 +18,7 @@ add_executable(OctreeProject
     src/enviroment/point/point.cpp
     src/enviroment/EnviromentBlock/octree/Octree.cpp
     src/enviroment/EnviromentBlock/enviroment_block.cpp
+    src/enviroment/map_updating/map_update.cpp
 
     src/enviroment/pathfinding/a_star.cpp
 
@@ -29,5 +32,6 @@ add_executable(OctreeProject
 
 # Include directories
 target_include_directories(OctreeProject PRIVATE src/)
+target_link_libraries(OctreeProject PRIVATE ${PCL_LIBRARIES})
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)

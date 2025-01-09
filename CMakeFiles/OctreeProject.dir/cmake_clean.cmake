@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/octree/Octree.cpp.o.d"
   "CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o"
   "CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o.d"
+  "CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.o"
+  "CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.o.d"
   "CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.o"
   "CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.o.d"
   "CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o"

@@ -139,10 +139,24 @@ CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/enviroment_block.cpp
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/enviroment_block.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/enviroment/EnviromentBlock/enviroment_block.cpp" -o CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/enviroment_block.cpp.s
 
+CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.o: CMakeFiles/OctreeProject.dir/flags.make
+CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.o: src/enviroment/map_updating/map_update.cpp
+CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.o: CMakeFiles/OctreeProject.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.o -MF CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.o.d -o CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/enviroment/map_updating/map_update.cpp"
+
+CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/enviroment/map_updating/map_update.cpp" > CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.i
+
+CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/enviroment/map_updating/map_update.cpp" -o CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.s
+
 CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.o: CMakeFiles/OctreeProject.dir/flags.make
 CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.o: src/enviroment/pathfinding/a_star.cpp
 CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.o: CMakeFiles/OctreeProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.o -MF CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.o.d -o CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/enviroment/pathfinding/a_star.cpp"
 
 CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.s: cmake_forc
 CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o: CMakeFiles/OctreeProject.dir/flags.make
 CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o: src/3d_model/alpha_shapes.cpp
 CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o: CMakeFiles/OctreeProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o -MF CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o.d -o CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/3d_model/alpha_shapes.cpp"
 
 CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.s: cmake_force
 CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.o: CMakeFiles/OctreeProject.dir/flags.make
 CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.o: src/FlightController/FlightController.cpp
 CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.o: CMakeFiles/OctreeProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.o -MF CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.o.d -o CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/FlightController/FlightController.cpp"
 
 CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.s: cmake_
 CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.o: CMakeFiles/OctreeProject.dir/flags.make
 CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.o: src/drone_communication/Communicator.cpp
 CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.o: CMakeFiles/OctreeProject.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.o -MF CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.o.d -o CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/src/drone_communication/Communicator.cpp"
 
 CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.i: cmake_force
@@ -202,6 +216,7 @@ OctreeProject_OBJECTS = \
 "CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o" \
 "CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/octree/Octree.cpp.o" \
 "CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/enviroment_block.cpp.o" \
+"CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.o" \
 "CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.o" \
 "CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o" \
 "CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.o" \
@@ -215,13 +230,79 @@ OctreeProject: CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o
 OctreeProject: CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o
 OctreeProject: CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/octree/Octree.cpp.o
 OctreeProject: CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/enviroment_block.cpp.o
+OctreeProject: CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.o
 OctreeProject: CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.o
 OctreeProject: CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o
 OctreeProject: CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.o
 OctreeProject: CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.o
 OctreeProject: CMakeFiles/OctreeProject.dir/build.make
+OctreeProject: /usr/lib/x86_64-linux-gnu/libpcl_registration.so
+OctreeProject: /usr/lib/x86_64-linux-gnu/libflann_cpp.so.1.9.2
+OctreeProject: /usr/lib/x86_64-linux-gnu/libpcl_features.so
+OctreeProject: /usr/lib/x86_64-linux-gnu/libpcl_filters.so
+OctreeProject: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so
+OctreeProject: /usr/lib/x86_64-linux-gnu/libpcl_search.so
+OctreeProject: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
+OctreeProject: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so
+OctreeProject: /usr/lib/x86_64-linux-gnu/libpcl_common.so
+OctreeProject: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.83.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libboost_atomic.so.1.83.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.83.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.83.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkChartsCore-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkInteractionImage-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkIOGeometry-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libjsoncpp.so
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkIOPLY-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkRenderingLOD-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkViewsContext2D-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkViewsCore-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkGUISupportQt-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkInteractionWidgets-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkFiltersModeling-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkInteractionStyle-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkFiltersExtraction-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkIOLegacy-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkIOCore-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkRenderingAnnotation-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkRenderingContext2D-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkRenderingFreeType-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libfreetype.so
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkImagingSources-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkIOImage-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkImagingCore-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkRenderingUI-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkRenderingCore-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkCommonColor-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeometry-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkFiltersSources-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkFiltersGeneral-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkCommonComputationalGeometry-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkFiltersCore-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkCommonExecutionModel-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkCommonDataModel-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkCommonMisc-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkCommonTransforms-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkCommonMath-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkkissfft-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libGLEW.so
+OctreeProject: /usr/lib/x86_64-linux-gnu/libX11.so
+OctreeProject: /usr/lib/x86_64-linux-gnu/libQt5OpenGL.so.5.15.13
+OctreeProject: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
+OctreeProject: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
+OctreeProject: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-9.1.so.9.1.0
+OctreeProject: /usr/lib/x86_64-linux-gnu/libtbb.so.12.11
+OctreeProject: /usr/lib/x86_64-linux-gnu/libvtksys-9.1.so.9.1.0
+OctreeProject: /usr/lib/gcc/x86_64-linux-gnu/13/libgomp.so
+OctreeProject: /usr/lib/x86_64-linux-gnu/libpthread.a
+OctreeProject: /usr/lib/x86_64-linux-gnu/libflann_cpp_s.a
+OctreeProject: /usr/lib/x86_64-linux-gnu/liblz4.so
 OctreeProject: CMakeFiles/OctreeProject.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable OctreeProject"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable OctreeProject"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/OctreeProject.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

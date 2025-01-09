@@ -273,6 +273,30 @@ src/enviroment/enviroment.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.s
 .PHONY : src/enviroment/enviroment.cpp.s
 
+src/enviroment/map_updating/map_update.o: src/enviroment/map_updating/map_update.cpp.o
+.PHONY : src/enviroment/map_updating/map_update.o
+
+# target to build an object file
+src/enviroment/map_updating/map_update.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.o
+.PHONY : src/enviroment/map_updating/map_update.cpp.o
+
+src/enviroment/map_updating/map_update.i: src/enviroment/map_updating/map_update.cpp.i
+.PHONY : src/enviroment/map_updating/map_update.i
+
+# target to preprocess a source file
+src/enviroment/map_updating/map_update.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.i
+.PHONY : src/enviroment/map_updating/map_update.cpp.i
+
+src/enviroment/map_updating/map_update.s: src/enviroment/map_updating/map_update.cpp.s
+.PHONY : src/enviroment/map_updating/map_update.s
+
+# target to generate assembly for a file
+src/enviroment/map_updating/map_update.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.s
+.PHONY : src/enviroment/map_updating/map_update.cpp.s
+
 src/enviroment/pathfinding/a_star.o: src/enviroment/pathfinding/a_star.cpp.o
 .PHONY : src/enviroment/pathfinding/a_star.o
 
@@ -372,6 +396,9 @@ help:
 	@echo "... src/enviroment/enviroment.o"
 	@echo "... src/enviroment/enviroment.i"
 	@echo "... src/enviroment/enviroment.s"
+	@echo "... src/enviroment/map_updating/map_update.o"
+	@echo "... src/enviroment/map_updating/map_update.i"
+	@echo "... src/enviroment/map_updating/map_update.s"
 	@echo "... src/enviroment/pathfinding/a_star.o"
 	@echo "... src/enviroment/pathfinding/a_star.i"
 	@echo "... src/enviroment/pathfinding/a_star.s"
