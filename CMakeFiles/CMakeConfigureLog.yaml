@@ -1606,3 +1606,550 @@ events:
         
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-4cuxpq"
+      binary: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-4cuxpq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-4cuxpq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_7e29c/fast
+        gmake[1]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-4cuxpq'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_7e29c.dir/build.make CMakeFiles/cmTC_7e29c.dir/build
+        gmake[2]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-4cuxpq'
+        Building C object CMakeFiles/cmTC_7e29c.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_7e29c.dir/test_mpi.c.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-4cuxpq/test_mpi.c"
+        Linking C executable cmTC_7e29c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7e29c.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_7e29c.dir/test_mpi.c.o -o cmTC_7e29c  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-4cuxpq'
+        gmake[1]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-4cuxpq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-0Wzg8r"
+      binary: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-0Wzg8r"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-0Wzg8r'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5900f/fast
+        gmake[1]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-0Wzg8r'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5900f.dir/build.make CMakeFiles/cmTC_5900f.dir/build
+        gmake[2]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-0Wzg8r'
+        Building C object CMakeFiles/cmTC_5900f.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_5900f.dir/test_mpi.c.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-0Wzg8r/test_mpi.c"
+        Linking C executable cmTC_5900f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5900f.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_5900f.dir/test_mpi.c.o -o cmTC_5900f  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-0Wzg8r'
+        gmake[1]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-0Wzg8r'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-eImaKR"
+      binary: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-eImaKR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-eImaKR'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5ba12/fast
+        gmake[1]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-eImaKR'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5ba12.dir/build.make CMakeFiles/cmTC_5ba12.dir/build
+        gmake[2]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-eImaKR'
+        Building C object CMakeFiles/cmTC_5ba12.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_5ba12.dir/test_mpi.c.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-eImaKR/test_mpi.c"
+        Linking C executable cmTC_5ba12
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5ba12.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_5ba12.dir/test_mpi.c.o -o cmTC_5ba12  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-eImaKR'
+        gmake[1]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-eImaKR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-tW1k2Q"
+      binary: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-tW1k2Q"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-tW1k2Q'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5624c/fast
+        gmake[1]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-tW1k2Q'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5624c.dir/build.make CMakeFiles/cmTC_5624c.dir/build
+        gmake[2]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-tW1k2Q'
+        Building C object CMakeFiles/cmTC_5624c.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_5624c.dir/test_mpi.c.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-tW1k2Q/test_mpi.c"
+        Linking C executable cmTC_5624c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5624c.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_5624c.dir/test_mpi.c.o -o cmTC_5624c  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-tW1k2Q'
+        gmake[1]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-tW1k2Q'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-s6VPA4"
+      binary: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-s6VPA4"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-s6VPA4'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a1adf/fast
+        gmake[1]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-s6VPA4'
+        gmake[1]: Warning: File 'Makefile' has modification time 0.15 s in the future
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a1adf.dir/build.make CMakeFiles/cmTC_a1adf.dir/build
+        gmake[2]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-s6VPA4'
+        gmake[2]: Warning: File 'CMakeFiles/cmTC_a1adf.dir/flags.make' has modification time 0.13 s in the future
+        Building C object CMakeFiles/cmTC_a1adf.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_a1adf.dir/test_mpi.c.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-s6VPA4/test_mpi.c"
+        Linking C executable cmTC_a1adf
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1adf.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_a1adf.dir/test_mpi.c.o -o cmTC_a1adf  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+        gmake[2]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-s6VPA4'
+        gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+        gmake[1]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-s6VPA4'
+        
+      exitCode: 0
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-Aq14OR"
+      binary: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-Aq14OR"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-Aq14OR'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_39a6d/fast
+        gmake[1]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-Aq14OR'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_39a6d.dir/build.make CMakeFiles/cmTC_39a6d.dir/build
+        gmake[2]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-Aq14OR'
+        Building C object CMakeFiles/cmTC_39a6d.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_39a6d.dir/test_mpi.c.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-Aq14OR/test_mpi.c"
+        Linking C executable cmTC_39a6d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_39a6d.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_39a6d.dir/test_mpi.c.o -o cmTC_39a6d  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-Aq14OR'
+        gmake[1]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-Aq14OR'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-hqmyEq"
+      binary: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-hqmyEq"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-hqmyEq'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_5267b/fast
+        gmake[1]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-hqmyEq'
+        gmake[1]: Warning: File 'Makefile' has modification time 0.11 s in the future
+        /usr/bin/gmake  -f CMakeFiles/cmTC_5267b.dir/build.make CMakeFiles/cmTC_5267b.dir/build
+        gmake[2]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-hqmyEq'
+        gmake[2]: Warning: File 'CMakeFiles/cmTC_5267b.dir/flags.make' has modification time 0.096 s in the future
+        Building C object CMakeFiles/cmTC_5267b.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_5267b.dir/test_mpi.c.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-hqmyEq/test_mpi.c"
+        Linking C executable cmTC_5267b
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5267b.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_5267b.dir/test_mpi.c.o -o cmTC_5267b  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+        gmake[2]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-hqmyEq'
+        gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+        gmake[1]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-hqmyEq'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-pRbefI"
+      binary: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-pRbefI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-pRbefI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_19517/fast
+        gmake[1]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-pRbefI'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_19517.dir/build.make CMakeFiles/cmTC_19517.dir/build
+        gmake[2]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-pRbefI'
+        Building C object CMakeFiles/cmTC_19517.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_19517.dir/test_mpi.c.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-pRbefI/test_mpi.c"
+        Linking C executable cmTC_19517
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19517.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_19517.dir/test_mpi.c.o -o cmTC_19517  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-pRbefI'
+        gmake[1]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-pRbefI'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-QcrrPY"
+      binary: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-QcrrPY"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-QcrrPY'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b805c/fast
+        gmake[1]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-QcrrPY'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b805c.dir/build.make CMakeFiles/cmTC_b805c.dir/build
+        gmake[2]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-QcrrPY'
+        Building C object CMakeFiles/cmTC_b805c.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_b805c.dir/test_mpi.c.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-QcrrPY/test_mpi.c"
+        Linking C executable cmTC_b805c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b805c.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_b805c.dir/test_mpi.c.o -o cmTC_b805c  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-QcrrPY'
+        gmake[1]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-QcrrPY'
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-C2rnGI"
+      binary: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-C2rnGI"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-C2rnGI'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d1283/fast
+        gmake[1]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-C2rnGI'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d1283.dir/build.make CMakeFiles/cmTC_d1283.dir/build
+        gmake[2]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-C2rnGI'
+        Building C object CMakeFiles/cmTC_d1283.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_d1283.dir/test_mpi.c.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-C2rnGI/test_mpi.c"
+        Linking C executable cmTC_d1283
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1283.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_d1283.dir/test_mpi.c.o -o cmTC_d1283  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-C2rnGI'
+        gmake[1]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-C2rnGI'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-HIelEO"
+      binary: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-HIelEO"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-HIelEO'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_be23d/fast
+        gmake[1]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-HIelEO'
+        gmake[1]: Warning: File 'Makefile' has modification time 0.073 s in the future
+        /usr/bin/gmake  -f CMakeFiles/cmTC_be23d.dir/build.make CMakeFiles/cmTC_be23d.dir/build
+        gmake[2]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-HIelEO'
+        gmake[2]: Warning: File 'CMakeFiles/cmTC_be23d.dir/flags.make' has modification time 0.055 s in the future
+        Building C object CMakeFiles/cmTC_be23d.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_be23d.dir/test_mpi.c.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-HIelEO/test_mpi.c"
+        Linking C executable cmTC_be23d
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be23d.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_be23d.dir/test_mpi.c.o -o cmTC_be23d  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[2]: warning:  Clock skew detected.  Your build may be incomplete.
+        gmake[2]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-HIelEO'
+        gmake[1]: warning:  Clock skew detected.  Your build may be incomplete.
+        gmake[1]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-HIelEO'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-ltHioz"
+      binary: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-ltHioz"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-ltHioz'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_2dd90/fast
+        gmake[1]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-ltHioz'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_2dd90.dir/build.make CMakeFiles/cmTC_2dd90.dir/build
+        gmake[2]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-ltHioz'
+        Building C object CMakeFiles/cmTC_2dd90.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_2dd90.dir/test_mpi.c.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-ltHioz/test_mpi.c"
+        Linking C executable cmTC_2dd90
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2dd90.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_2dd90.dir/test_mpi.c.o -o cmTC_2dd90  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-ltHioz'
+        gmake[1]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-ltHioz'
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1278 (try_compile)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1322 (_MPI_try_staged_settings)"
+      - "/usr/share/cmake-3.28/Modules/FindMPI.cmake:1645 (_MPI_check_lang_works)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/VTK-vtk-module-find-packages.cmake:397 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/vtk-config.cmake:150 (include)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:275 (find_package)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:324 (find_VTK)"
+      - "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:567 (find_external_library)"
+      - "CMakeLists.txt:4 (find_package)"
+    description: "The MPI test test_mpi for C in mode normal"
+    directories:
+      source: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-9Y6eoo"
+      binary: "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-9Y6eoo"
+    cmakeVariables:
+      CMAKE_C_FLAGS: ""
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/patches/99;/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1;/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules"
+    buildResult:
+      variable: "MPI_RESULT_C_test_mpi_normal"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-9Y6eoo'
+        
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_a1b3c/fast
+        gmake[1]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-9Y6eoo'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_a1b3c.dir/build.make CMakeFiles/cmTC_a1b3c.dir/build
+        gmake[2]: Entering directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-9Y6eoo'
+        Building C object CMakeFiles/cmTC_a1b3c.dir/test_mpi.c.o
+        /usr/bin/cc  -isystem /usr/lib/x86_64-linux-gnu/openmpi/include -isystem /usr/lib/x86_64-linux-gnu/openmpi/include/openmpi  -o CMakeFiles/cmTC_a1b3c.dir/test_mpi.c.o -c "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-9Y6eoo/test_mpi.c"
+        Linking C executable cmTC_a1b3c
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a1b3c.dir/link.txt --verbose=1
+        /usr/bin/cc -L/usr/lib/x86_64-linux-gnu/openmpi/lib CMakeFiles/cmTC_a1b3c.dir/test_mpi.c.o -o cmTC_a1b3c  /usr/lib/x86_64-linux-gnu/libmpi.so 
+        gmake[2]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-9Y6eoo'
+        gmake[1]: Leaving directory '/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/CMakeScratch/TryCompile-9Y6eoo'
+        
+      exitCode: 0
+...

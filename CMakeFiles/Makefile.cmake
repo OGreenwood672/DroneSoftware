@@ -18,6 +18,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Boost-1.83.0/BoostConfigVersion.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/BoostDetectToolset-1.83.0.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qhull/QhullConfig.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qhull/QhullConfigVersion.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qhull/QhullTargets-none.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/Qhull/QhullTargets.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5Config.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ConfigVersion.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/Qt5/Qt5ModuleLocation.cmake"
@@ -87,6 +91,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/lib/x86_64-linux-gnu/cmake/boost_system-1.83.0/libboost_system-variant-static.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenMP.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindOpenNI2.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindPcap.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindQhull.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/Findlibusb.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfigVersion.cmake"
   "/usr/lib/x86_64-linux-gnu/cmake/vtk-9.1/FindEXPAT.cmake"
@@ -189,5 +198,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/OctreeProject.dir/DependInfo.cmake"
+  "CMakeFiles/DroneScanner.dir/DependInfo.cmake"
   )

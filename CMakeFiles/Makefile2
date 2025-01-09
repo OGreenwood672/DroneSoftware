@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping"
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/OctreeProject.dir/all
+all: CMakeFiles/DroneScanner.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/OctreeProject.dir/clean
+clean: CMakeFiles/DroneScanner.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/OctreeProject.dir
+# Target rules for target CMakeFiles/DroneScanner.dir
 
 # All Build rule for target.
-CMakeFiles/OctreeProject.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11 "Built target OctreeProject"
-.PHONY : CMakeFiles/OctreeProject.dir/all
+CMakeFiles/DroneScanner.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target DroneScanner"
+.PHONY : CMakeFiles/DroneScanner.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/OctreeProject.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" 11
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/OctreeProject.dir/all
+CMakeFiles/DroneScanner.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" 13
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/DroneScanner.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles" 0
-.PHONY : CMakeFiles/OctreeProject.dir/rule
+.PHONY : CMakeFiles/DroneScanner.dir/rule
 
 # Convenience name for target.
-OctreeProject: CMakeFiles/OctreeProject.dir/rule
-.PHONY : OctreeProject
+DroneScanner: CMakeFiles/DroneScanner.dir/rule
+.PHONY : DroneScanner
 
 # clean rule for target.
-CMakeFiles/OctreeProject.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/clean
-.PHONY : CMakeFiles/OctreeProject.dir/clean
+CMakeFiles/DroneScanner.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/clean
+.PHONY : CMakeFiles/DroneScanner.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

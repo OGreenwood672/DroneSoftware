@@ -162,7 +162,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=OctreeProject
+CMAKE_PROJECT_NAME:STATIC=DroneScanner
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -228,6 +228,15 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+
+//Value Computed by CMake
+DroneScanner_BINARY_DIR:STATIC=/mnt/c/Users/green/OneDrive/Desktop/3D Mapping
+
+//Value Computed by CMake
+DroneScanner_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+DroneScanner_SOURCE_DIR:STATIC=/mnt/c/Users/green/OneDrive/Desktop/3D Mapping
 
 //Path to a file.
 EXPAT_INCLUDE_DIR:PATH=/usr/include
@@ -504,6 +513,15 @@ PCL_SEARCH_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcl_search.so
 //path to pcl_search library debug
 PCL_SEARCH_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcl_search.so
 
+//path to surface headers
+PCL_SURFACE_INCLUDE_DIR:PATH=/usr/include/pcl-1.14
+
+//path to pcl_surface library
+PCL_SURFACE_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcl_surface.so
+
+//path to pcl_surface library debug
+PCL_SURFACE_LIBRARY_DEBUG:FILEPATH=/usr/lib/x86_64-linux-gnu/libpcl_surface.so
+
 //Arguments to supply to pkg-config
 PKG_CONFIG_ARGN:STRING=
 
@@ -518,6 +536,9 @@ PNG_LIBRARY_RELEASE:FILEPATH=/usr/lib/x86_64-linux-gnu/libpng.so
 
 //Path to a file.
 PNG_PNG_INCLUDE_DIR:PATH=/usr/include
+
+//The directory containing a CMake configuration file for Qhull.
+Qhull_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qhull
 
 //The directory containing a CMake configuration file for Qt5Core.
 Qt5Core_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/Qt5Core
@@ -1223,7 +1244,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_OpenNI:INTERNAL=[/usr/lib/libOpenNI.so;libusb::libu
 //Details about finding OpenNI2
 FIND_PACKAGE_MESSAGE_DETAILS_OpenNI2:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb][/usr/include/openni2][v2.2.0.33()]
 //Details about finding PCL
-FIND_PACKAGE_MESSAGE_DETAILS_PCL:INTERNAL=[pcl_common;pcl_octree;pcl_kdtree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_features;pcl_registration;Boost::system;Boost::filesystem;Boost::iostreams;Boost::serialization;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::RenderingContextOpenGL2;VTK::GUISupportQt;FLANN::FLANN][/usr/include/pcl-1.14;/usr/include/eigen3;/usr/include][v()]
+FIND_PACKAGE_MESSAGE_DETAILS_PCL:INTERNAL=[pcl_common;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_registration;pcl_io;pcl_kdtree;pcl_features;pcl_surface;Boost::system;Boost::filesystem;Boost::iostreams;Boost::serialization;/usr/lib/libOpenNI.so;libusb::libusb;/usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::RenderingContextOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL][/usr/include/pcl-1.14;/usr/include/eigen3;/usr/include;/usr/include/ni;/usr/include/openni2][v()]
 //Details about finding PCL_2D
 FIND_PACKAGE_MESSAGE_DETAILS_PCL_2D:INTERNAL=[/usr/include/pcl-1.14][v()]
 //Details about finding PCL_COMMON
@@ -1244,6 +1265,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_PCL_REGISTRATION:INTERNAL=[/usr/lib/x86_64-linux-gn
 FIND_PACKAGE_MESSAGE_DETAILS_PCL_SAMPLE_CONSENSUS:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so][/usr/include/pcl-1.14][v()]
 //Details about finding PCL_SEARCH
 FIND_PACKAGE_MESSAGE_DETAILS_PCL_SEARCH:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpcl_search.so][/usr/include/pcl-1.14][v()]
+//Details about finding PCL_SURFACE
+FIND_PACKAGE_MESSAGE_DETAILS_PCL_SURFACE:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpcl_surface.so][/usr/include/pcl-1.14][v()]
 //Details about finding PNG
 FIND_PACKAGE_MESSAGE_DETAILS_PNG:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpng.so][/usr/include][v1.6.43()]
 //Details about finding TIFF
@@ -1416,6 +1439,12 @@ PCL_SEARCH_INCLUDE_DIR-ADVANCED:INTERNAL=1
 PCL_SEARCH_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PCL_SEARCH_LIBRARY_DEBUG
 PCL_SEARCH_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PCL_SURFACE_INCLUDE_DIR
+PCL_SURFACE_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PCL_SURFACE_LIBRARY
+PCL_SURFACE_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PCL_SURFACE_LIBRARY_DEBUG
+PCL_SURFACE_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 PC_EXPAT_CFLAGS:INTERNAL=-I/usr/include
 PC_EXPAT_CFLAGS_I:INTERNAL=
 PC_EXPAT_CFLAGS_OTHER:INTERNAL=

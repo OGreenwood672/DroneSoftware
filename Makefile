@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named OctreeProject
+# Target rules for targets named DroneScanner
 
 # Build rule for target.
-OctreeProject: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 OctreeProject
-.PHONY : OctreeProject
+DroneScanner: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DroneScanner
+.PHONY : DroneScanner
 
 # fast build rule for target.
-OctreeProject/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/build
-.PHONY : OctreeProject/fast
+DroneScanner/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/build
+.PHONY : DroneScanner/fast
 
 src/3d_model/alpha_shapes.o: src/3d_model/alpha_shapes.cpp.o
 .PHONY : src/3d_model/alpha_shapes.o
 
 # target to build an object file
 src/3d_model/alpha_shapes.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/3d_model/alpha_shapes.cpp.o
 .PHONY : src/3d_model/alpha_shapes.cpp.o
 
 src/3d_model/alpha_shapes.i: src/3d_model/alpha_shapes.cpp.i
@@ -142,7 +142,7 @@ src/3d_model/alpha_shapes.i: src/3d_model/alpha_shapes.cpp.i
 
 # target to preprocess a source file
 src/3d_model/alpha_shapes.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/3d_model/alpha_shapes.cpp.i
 .PHONY : src/3d_model/alpha_shapes.cpp.i
 
 src/3d_model/alpha_shapes.s: src/3d_model/alpha_shapes.cpp.s
@@ -150,15 +150,63 @@ src/3d_model/alpha_shapes.s: src/3d_model/alpha_shapes.cpp.s
 
 # target to generate assembly for a file
 src/3d_model/alpha_shapes.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/3d_model/alpha_shapes.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/3d_model/alpha_shapes.cpp.s
 .PHONY : src/3d_model/alpha_shapes.cpp.s
+
+src/3d_model/greedy_projection_triangulation.o: src/3d_model/greedy_projection_triangulation.cpp.o
+.PHONY : src/3d_model/greedy_projection_triangulation.o
+
+# target to build an object file
+src/3d_model/greedy_projection_triangulation.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/3d_model/greedy_projection_triangulation.cpp.o
+.PHONY : src/3d_model/greedy_projection_triangulation.cpp.o
+
+src/3d_model/greedy_projection_triangulation.i: src/3d_model/greedy_projection_triangulation.cpp.i
+.PHONY : src/3d_model/greedy_projection_triangulation.i
+
+# target to preprocess a source file
+src/3d_model/greedy_projection_triangulation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/3d_model/greedy_projection_triangulation.cpp.i
+.PHONY : src/3d_model/greedy_projection_triangulation.cpp.i
+
+src/3d_model/greedy_projection_triangulation.s: src/3d_model/greedy_projection_triangulation.cpp.s
+.PHONY : src/3d_model/greedy_projection_triangulation.s
+
+# target to generate assembly for a file
+src/3d_model/greedy_projection_triangulation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/3d_model/greedy_projection_triangulation.cpp.s
+.PHONY : src/3d_model/greedy_projection_triangulation.cpp.s
+
+src/3d_model/poisson_reconstruction.o: src/3d_model/poisson_reconstruction.cpp.o
+.PHONY : src/3d_model/poisson_reconstruction.o
+
+# target to build an object file
+src/3d_model/poisson_reconstruction.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/3d_model/poisson_reconstruction.cpp.o
+.PHONY : src/3d_model/poisson_reconstruction.cpp.o
+
+src/3d_model/poisson_reconstruction.i: src/3d_model/poisson_reconstruction.cpp.i
+.PHONY : src/3d_model/poisson_reconstruction.i
+
+# target to preprocess a source file
+src/3d_model/poisson_reconstruction.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/3d_model/poisson_reconstruction.cpp.i
+.PHONY : src/3d_model/poisson_reconstruction.cpp.i
+
+src/3d_model/poisson_reconstruction.s: src/3d_model/poisson_reconstruction.cpp.s
+.PHONY : src/3d_model/poisson_reconstruction.s
+
+# target to generate assembly for a file
+src/3d_model/poisson_reconstruction.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/3d_model/poisson_reconstruction.cpp.s
+.PHONY : src/3d_model/poisson_reconstruction.cpp.s
 
 src/FlightController/FlightController.o: src/FlightController/FlightController.cpp.o
 .PHONY : src/FlightController/FlightController.o
 
 # target to build an object file
 src/FlightController/FlightController.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/FlightController/FlightController.cpp.o
 .PHONY : src/FlightController/FlightController.cpp.o
 
 src/FlightController/FlightController.i: src/FlightController/FlightController.cpp.i
@@ -166,7 +214,7 @@ src/FlightController/FlightController.i: src/FlightController/FlightController.c
 
 # target to preprocess a source file
 src/FlightController/FlightController.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/FlightController/FlightController.cpp.i
 .PHONY : src/FlightController/FlightController.cpp.i
 
 src/FlightController/FlightController.s: src/FlightController/FlightController.cpp.s
@@ -174,7 +222,7 @@ src/FlightController/FlightController.s: src/FlightController/FlightController.c
 
 # target to generate assembly for a file
 src/FlightController/FlightController.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/FlightController/FlightController.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/FlightController/FlightController.cpp.s
 .PHONY : src/FlightController/FlightController.cpp.s
 
 src/drone_communication/Communicator.o: src/drone_communication/Communicator.cpp.o
@@ -182,7 +230,7 @@ src/drone_communication/Communicator.o: src/drone_communication/Communicator.cpp
 
 # target to build an object file
 src/drone_communication/Communicator.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/drone_communication/Communicator.cpp.o
 .PHONY : src/drone_communication/Communicator.cpp.o
 
 src/drone_communication/Communicator.i: src/drone_communication/Communicator.cpp.i
@@ -190,7 +238,7 @@ src/drone_communication/Communicator.i: src/drone_communication/Communicator.cpp
 
 # target to preprocess a source file
 src/drone_communication/Communicator.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/drone_communication/Communicator.cpp.i
 .PHONY : src/drone_communication/Communicator.cpp.i
 
 src/drone_communication/Communicator.s: src/drone_communication/Communicator.cpp.s
@@ -198,7 +246,7 @@ src/drone_communication/Communicator.s: src/drone_communication/Communicator.cpp
 
 # target to generate assembly for a file
 src/drone_communication/Communicator.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/drone_communication/Communicator.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/drone_communication/Communicator.cpp.s
 .PHONY : src/drone_communication/Communicator.cpp.s
 
 src/enviroment/EnviromentBlock/enviroment_block.o: src/enviroment/EnviromentBlock/enviroment_block.cpp.o
@@ -206,7 +254,7 @@ src/enviroment/EnviromentBlock/enviroment_block.o: src/enviroment/EnviromentBloc
 
 # target to build an object file
 src/enviroment/EnviromentBlock/enviroment_block.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/enviroment_block.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/EnviromentBlock/enviroment_block.cpp.o
 .PHONY : src/enviroment/EnviromentBlock/enviroment_block.cpp.o
 
 src/enviroment/EnviromentBlock/enviroment_block.i: src/enviroment/EnviromentBlock/enviroment_block.cpp.i
@@ -214,7 +262,7 @@ src/enviroment/EnviromentBlock/enviroment_block.i: src/enviroment/EnviromentBloc
 
 # target to preprocess a source file
 src/enviroment/EnviromentBlock/enviroment_block.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/enviroment_block.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/EnviromentBlock/enviroment_block.cpp.i
 .PHONY : src/enviroment/EnviromentBlock/enviroment_block.cpp.i
 
 src/enviroment/EnviromentBlock/enviroment_block.s: src/enviroment/EnviromentBlock/enviroment_block.cpp.s
@@ -222,7 +270,7 @@ src/enviroment/EnviromentBlock/enviroment_block.s: src/enviroment/EnviromentBloc
 
 # target to generate assembly for a file
 src/enviroment/EnviromentBlock/enviroment_block.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/enviroment_block.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/EnviromentBlock/enviroment_block.cpp.s
 .PHONY : src/enviroment/EnviromentBlock/enviroment_block.cpp.s
 
 src/enviroment/EnviromentBlock/octree/Octree.o: src/enviroment/EnviromentBlock/octree/Octree.cpp.o
@@ -230,7 +278,7 @@ src/enviroment/EnviromentBlock/octree/Octree.o: src/enviroment/EnviromentBlock/o
 
 # target to build an object file
 src/enviroment/EnviromentBlock/octree/Octree.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/octree/Octree.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/EnviromentBlock/octree/Octree.cpp.o
 .PHONY : src/enviroment/EnviromentBlock/octree/Octree.cpp.o
 
 src/enviroment/EnviromentBlock/octree/Octree.i: src/enviroment/EnviromentBlock/octree/Octree.cpp.i
@@ -238,7 +286,7 @@ src/enviroment/EnviromentBlock/octree/Octree.i: src/enviroment/EnviromentBlock/o
 
 # target to preprocess a source file
 src/enviroment/EnviromentBlock/octree/Octree.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/octree/Octree.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/EnviromentBlock/octree/Octree.cpp.i
 .PHONY : src/enviroment/EnviromentBlock/octree/Octree.cpp.i
 
 src/enviroment/EnviromentBlock/octree/Octree.s: src/enviroment/EnviromentBlock/octree/Octree.cpp.s
@@ -246,7 +294,7 @@ src/enviroment/EnviromentBlock/octree/Octree.s: src/enviroment/EnviromentBlock/o
 
 # target to generate assembly for a file
 src/enviroment/EnviromentBlock/octree/Octree.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/EnviromentBlock/octree/Octree.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/EnviromentBlock/octree/Octree.cpp.s
 .PHONY : src/enviroment/EnviromentBlock/octree/Octree.cpp.s
 
 src/enviroment/enviroment.o: src/enviroment/enviroment.cpp.o
@@ -254,7 +302,7 @@ src/enviroment/enviroment.o: src/enviroment/enviroment.cpp.o
 
 # target to build an object file
 src/enviroment/enviroment.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/enviroment.cpp.o
 .PHONY : src/enviroment/enviroment.cpp.o
 
 src/enviroment/enviroment.i: src/enviroment/enviroment.cpp.i
@@ -262,7 +310,7 @@ src/enviroment/enviroment.i: src/enviroment/enviroment.cpp.i
 
 # target to preprocess a source file
 src/enviroment/enviroment.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/enviroment.cpp.i
 .PHONY : src/enviroment/enviroment.cpp.i
 
 src/enviroment/enviroment.s: src/enviroment/enviroment.cpp.s
@@ -270,7 +318,7 @@ src/enviroment/enviroment.s: src/enviroment/enviroment.cpp.s
 
 # target to generate assembly for a file
 src/enviroment/enviroment.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/enviroment.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/enviroment.cpp.s
 .PHONY : src/enviroment/enviroment.cpp.s
 
 src/enviroment/map_updating/map_update.o: src/enviroment/map_updating/map_update.cpp.o
@@ -278,7 +326,7 @@ src/enviroment/map_updating/map_update.o: src/enviroment/map_updating/map_update
 
 # target to build an object file
 src/enviroment/map_updating/map_update.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/map_updating/map_update.cpp.o
 .PHONY : src/enviroment/map_updating/map_update.cpp.o
 
 src/enviroment/map_updating/map_update.i: src/enviroment/map_updating/map_update.cpp.i
@@ -286,7 +334,7 @@ src/enviroment/map_updating/map_update.i: src/enviroment/map_updating/map_update
 
 # target to preprocess a source file
 src/enviroment/map_updating/map_update.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/map_updating/map_update.cpp.i
 .PHONY : src/enviroment/map_updating/map_update.cpp.i
 
 src/enviroment/map_updating/map_update.s: src/enviroment/map_updating/map_update.cpp.s
@@ -294,7 +342,7 @@ src/enviroment/map_updating/map_update.s: src/enviroment/map_updating/map_update
 
 # target to generate assembly for a file
 src/enviroment/map_updating/map_update.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/map_updating/map_update.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/map_updating/map_update.cpp.s
 .PHONY : src/enviroment/map_updating/map_update.cpp.s
 
 src/enviroment/pathfinding/a_star.o: src/enviroment/pathfinding/a_star.cpp.o
@@ -302,7 +350,7 @@ src/enviroment/pathfinding/a_star.o: src/enviroment/pathfinding/a_star.cpp.o
 
 # target to build an object file
 src/enviroment/pathfinding/a_star.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/pathfinding/a_star.cpp.o
 .PHONY : src/enviroment/pathfinding/a_star.cpp.o
 
 src/enviroment/pathfinding/a_star.i: src/enviroment/pathfinding/a_star.cpp.i
@@ -310,7 +358,7 @@ src/enviroment/pathfinding/a_star.i: src/enviroment/pathfinding/a_star.cpp.i
 
 # target to preprocess a source file
 src/enviroment/pathfinding/a_star.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/pathfinding/a_star.cpp.i
 .PHONY : src/enviroment/pathfinding/a_star.cpp.i
 
 src/enviroment/pathfinding/a_star.s: src/enviroment/pathfinding/a_star.cpp.s
@@ -318,7 +366,7 @@ src/enviroment/pathfinding/a_star.s: src/enviroment/pathfinding/a_star.cpp.s
 
 # target to generate assembly for a file
 src/enviroment/pathfinding/a_star.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/pathfinding/a_star.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/pathfinding/a_star.cpp.s
 .PHONY : src/enviroment/pathfinding/a_star.cpp.s
 
 src/enviroment/point/point.o: src/enviroment/point/point.cpp.o
@@ -326,7 +374,7 @@ src/enviroment/point/point.o: src/enviroment/point/point.cpp.o
 
 # target to build an object file
 src/enviroment/point/point.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/point/point.cpp.o
 .PHONY : src/enviroment/point/point.cpp.o
 
 src/enviroment/point/point.i: src/enviroment/point/point.cpp.i
@@ -334,7 +382,7 @@ src/enviroment/point/point.i: src/enviroment/point/point.cpp.i
 
 # target to preprocess a source file
 src/enviroment/point/point.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/point/point.cpp.i
 .PHONY : src/enviroment/point/point.cpp.i
 
 src/enviroment/point/point.s: src/enviroment/point/point.cpp.s
@@ -342,7 +390,7 @@ src/enviroment/point/point.s: src/enviroment/point/point.cpp.s
 
 # target to generate assembly for a file
 src/enviroment/point/point.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/enviroment/point/point.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/enviroment/point/point.cpp.s
 .PHONY : src/enviroment/point/point.cpp.s
 
 src/main.o: src/main.cpp.o
@@ -350,7 +398,7 @@ src/main.o: src/main.cpp.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -358,7 +406,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -366,7 +414,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/OctreeProject.dir/build.make CMakeFiles/OctreeProject.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DroneScanner.dir/build.make CMakeFiles/DroneScanner.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -377,10 +425,16 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... OctreeProject"
+	@echo "... DroneScanner"
 	@echo "... src/3d_model/alpha_shapes.o"
 	@echo "... src/3d_model/alpha_shapes.i"
 	@echo "... src/3d_model/alpha_shapes.s"
+	@echo "... src/3d_model/greedy_projection_triangulation.o"
+	@echo "... src/3d_model/greedy_projection_triangulation.i"
+	@echo "... src/3d_model/greedy_projection_triangulation.s"
+	@echo "... src/3d_model/poisson_reconstruction.o"
+	@echo "... src/3d_model/poisson_reconstruction.i"
+	@echo "... src/3d_model/poisson_reconstruction.s"
 	@echo "... src/FlightController/FlightController.o"
 	@echo "... src/FlightController/FlightController.i"
 	@echo "... src/FlightController/FlightController.s"

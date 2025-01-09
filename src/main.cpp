@@ -79,6 +79,7 @@ void test_alpha_shape() {
     }
 
     env.export_point_cloud("point_cloud.ply");
+    env.poisson_reconstruction("env.obj");
 
     // AlphaShapes alpha_shapes(env, 50);
 

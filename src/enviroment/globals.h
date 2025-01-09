@@ -9,4 +9,4 @@
 #define WORLD_DEPTH 2000
 #define WORLD_HEIGHT 2000
 
-#define BATCH_SIZE 20
+#define BATCH_SIZE 390

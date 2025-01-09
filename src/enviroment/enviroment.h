@@ -31,6 +31,8 @@ public:
     std::unordered_set<Point> get_points() const;
 
     void export_point_cloud(const std::string& filename) const;
+    void greedy_projection_triangulation(const std::string& filename) const;
+    void poisson_reconstruction(const std::string& filename) const;
 
     void apply_to_world(std::function<void(int x, int y, int z, EnviromentBlock* block)> func);
 
