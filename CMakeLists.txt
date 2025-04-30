@@ -26,8 +26,6 @@ add_executable(DroneScanner
     src/3d_model/greedy_projection_triangulation.cpp
     src/3d_model/poisson_reconstruction.cpp
 
-    src/FlightController/FlightController.cpp
-
     src/drone_communication/Communicator.cpp
 
 )

@@ -1,3 +1,0 @@
-/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/DroneScanner.dir
-/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/edit_cache.dir
-/mnt/c/Users/green/OneDrive/Desktop/3D Mapping/CMakeFiles/rebuild_cache.dir
